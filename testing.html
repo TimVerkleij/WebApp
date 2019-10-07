@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="calendarPage.css">
+    <title>Reserveren</title>
+</head>
+<body>
+        <h1>Reserveren</h1>
+        <p>Kies hieronder een datum voor uw afspraak.<br>
+        Het is niet mogelijk om een afspraak voor vandaag te plannen.</p>
+        <form action="index.html">
+            <button class="return"></button>
+        </form>
+    <input type="date" id="date" class="unstyled" oninput="datumgekozen()">
+    <select style="visibility: hidden" id="time" oninput="ready()">
+        <option value="9:00" id="9">9:00</option>
+        <option value="9:30" id="9.30">9:30</option>
+     
+        <option value="10:00" id="10">10:00</option>
+        <option value="10:30" id="10.30">10:30</option>
+     
+        <option value="11:00" id="11">11:00</option>
+        <option value="11:30" id="11.30">11:30</option>
+     
+        <option value="12:00" id="12">12:00</option>
+        <option value="12:30" id="12.30">12:30</option>
+     
+        <option value="1:00" id="13">13:00</option>
+        <option value="1:30" id="13.30">13:30</option>
+     
+        <option value="2:00" id="14">14:00</option>
+        <option value="2:30" id="14.30">14:30</option>
+     
+        <option value="3:00" id="15">15:00</option>
+        <option value="3:30" id="15.30">15:30</option>
+     
+        <option value="4:00" id="16">16:00</option>
+        <option value="4:30" id="16.30">16:30</option>
+    </select>
+    <p id="p1" style="visibility: hidden"></p>
+</body>
+<script src="calendar.js"></script>
+</html>
