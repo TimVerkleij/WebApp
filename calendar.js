@@ -110,5 +110,37 @@ function ready(){
     var tijd = document.getElementById("time").value;
     var datumstrng = datum.toString();
     document.getElementById("p1").style.visibility = 'visible';
+    document.getElementById("p2").style.visibility = 'visible';
+    document.getElementById("stoelen").style.visibility = 'visible';
     document.getElementById("p1").innerHTML = "De geselecteerde datum is " + datumstrng + " om " + tijd + " uur.";
+}
+
+var beschikbaar1 = 0;
+var beschikbaar2 = 0;
+var beschikbaar3 = 0;
+var beschikbaar4 = 0;
+
+function Bert(){
+    document.getElementById("Bert").src = "stoel_bezet.png";
+    document.getElementById("Ernie").src = "stoel_vrij.png";
+    document.getElementById("Samson").src = "stoel_vrij.png";
+    document.getElementById("Gert").src = "stoel_vrij.png";
+}
+function Ernie(){
+    document.getElementById("Bert").src = "stoel_vrij.png";
+    document.getElementById("Ernie").src = "stoel_bezet.png";
+    document.getElementById("Samson").src = "stoel_vrij.png";
+    document.getElementById("Gert").src = "stoel_vrij.png";
+}
+function Samson(){
+    document.getElementById("Bert").src = "stoel_vrij.png";
+    document.getElementById("Ernie").src = "stoel_vrij.png";
+    document.getElementById("Samson").src = "stoel_bezet.png";
+    document.getElementById("Gert").src = "stoel_vrij.png";
+}
+function Gert(){
+    document.getElementById("Bert").src = "stoel_vrij.png";
+    document.getElementById("Ernie").src = "stoel_vrij.png";
+    document.getElementById("Samson").src = "stoel_vrij.png";
+    document.getElementById("Gert").src = "stoel_bezet.png";
 }

@@ -42,3 +42,17 @@ h1{
     display: none;
     -webkit-appearance: none;
 }
+img{
+    width: 100%;
+    height: width;
+}
+table{
+    text-align: center;
+}
+
+.icon{
+    width: 10px;
+    height: 10px;
+    float: left;
+    margin-right: 5px;
+}
