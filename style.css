@@ -1,17 +1,26 @@
+@media only screen and (max-width: 600px) {
+    .return {
+      right: 5px;
+    }
+}
+
 body {
     background: rgb(0, 9, 58);
     color: white;
 }
+
 h1{
     text-align: center;
     color: rgb(142, 228, );
     
 }
+
 h2{
     font-style: italic;
     text-align: left;
     text-transform: uppercase;
 }
+
 h3, p{
     text-align: left;
 }
@@ -30,6 +39,7 @@ button:not(.return){
   margin: 7px;
   width: 98%;
 }
+
 input{
     padding: 15px 25px;
   font-size: 24px;
@@ -46,7 +56,9 @@ input{
   width: 75%;
 }
 
-button:hover:not(.return) {background-color: rgb(10, 150, 59)}
+button:hover:not(.return) {
+    background-color: rgb(10, 150, 59)
+}
 
 button:active:not(.return) {
     background-color: rgb(13, 134, 56);
@@ -73,9 +85,3 @@ div{
     background-color: transparent;
     box-shadow: none;
 }
-
-@media only screen and (max-width: 600px) {
-    .return {
-      right: 5px;
-    }
-  }
