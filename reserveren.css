@@ -7,7 +7,7 @@ body {
     color: white;
 }
 
-input, select{
+input:not([type=radio]), select{
     padding: 15px 25px;
   font-size: 24px;
   text-align: center;
@@ -29,7 +29,6 @@ h1{
 
 .return{
     position: fixed;
-    right: 2px;
     top: 5px;
     width: 50px;
     height: 50px;
@@ -39,11 +38,17 @@ h1{
     background-color: transparent;
 }
 
+@media only screen and (max-width: 600px) {
+    .return {
+      right: 5px;
+    }
+  }
+
 .unstyled::-webkit-inner-spin-button, .unstyled::-webkit-clear-button {
     display: none;
     -webkit-appearance: none;
 }
-img{
+img:not(#imgA, #imgB, #imgC, #imgD){
     width: 100%;
     height: width;
 }
@@ -56,4 +61,19 @@ table{
     height: width;
     float: left;
     margin-right: 5px;
+}
+
+[type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+[type=radio] + img {
+    cursor: pointer;
+}
+
+.stoel{
+    width: 100%;
 }

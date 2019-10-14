@@ -115,32 +115,69 @@ function ready(){
     document.getElementById("p1").innerHTML = "De geselecteerde datum is " + datumstrng + " om " + tijd + " uur.";
 }
 
-var beschikbaar1 = 0;
-var beschikbaar2 = 0;
-var beschikbaar3 = 0;
-var beschikbaar4 = 0;
+// var beschikbaar1 = 0;
+// var beschikbaar2 = 0;
+// var beschikbaar3 = 0;
+// var beschikbaar4 = 0;
 
-function Bert(){
-    document.getElementById("Bert").src = "stoel_bezet.png";
-    document.getElementById("Ernie").src = "stoel_vrij.png";
-    document.getElementById("Samson").src = "stoel_vrij.png";
-    document.getElementById("Gert").src = "stoel_vrij.png";
-}
-function Ernie(){
-    document.getElementById("Bert").src = "stoel_vrij.png";
-    document.getElementById("Ernie").src = "stoel_bezet.png";
-    document.getElementById("Samson").src = "stoel_vrij.png";
-    document.getElementById("Gert").src = "stoel_vrij.png";
-}
-function Samson(){
-    document.getElementById("Bert").src = "stoel_vrij.png";
-    document.getElementById("Ernie").src = "stoel_vrij.png";
-    document.getElementById("Samson").src = "stoel_bezet.png";
-    document.getElementById("Gert").src = "stoel_vrij.png";
-}
-function Gert(){
-    document.getElementById("Bert").src = "stoel_vrij.png";
-    document.getElementById("Ernie").src = "stoel_vrij.png";
-    document.getElementById("Samson").src = "stoel_vrij.png";
-    document.getElementById("Gert").src = "stoel_bezet.png";
-}
+// function Bert(){
+//     document.getElementById("Bert").src = "stoel_bezet.png";
+//     document.getElementById("Ernie").src = "stoel_vrij.png";
+//     document.getElementById("Samson").src = "stoel_vrij.png";
+//     document.getElementById("Gert").src = "stoel_vrij.png";
+// }
+// function Ernie(){
+//     document.getElementById("Bert").src = "stoel_vrij.png";
+//     document.getElementById("Ernie").src = "stoel_bezet.png";
+//     document.getElementById("Samson").src = "stoel_vrij.png";
+//     document.getElementById("Gert").src = "stoel_vrij.png";
+// }
+// function Samson(){
+//     document.getElementById("Bert").src = "stoel_vrij.png";
+//     document.getElementById("Ernie").src = "stoel_vrij.png";
+//     document.getElementById("Samson").src = "stoel_bezet.png";
+//     document.getElementById("Gert").src = "stoel_vrij.png";
+// }
+// function Gert(){
+//     document.getElementById("Bert").src = "stoel_vrij.png";
+//     document.getElementById("Ernie").src = "stoel_vrij.png";
+//     document.getElementById("Samson").src = "stoel_vrij.png";
+//     document.getElementById("Gert").src = "stoel_bezet.png";
+// }
+
+function check() {
+	var a = document.getElementById('a');
+	var b = document.getElementById('b');
+	var c = document.getElementById('c');
+	var d = document.getElementById('d');
+	var a2 = document.getElementById('imgA');
+	var b2 = document.getElementById('imgB');
+	var c2 = document.getElementById('imgC');
+	var d2 = document.getElementById('imgD');
+		if (a.checked) {
+			a2.src = 'stoel_bezet.png';
+
+		}else{
+			a2.src = 'stoel_vrij.png';
+		}
+
+		if (b.checked) {
+			b2.src = 'stoel_bezet.png';
+		}else{
+			b2.src = 'stoel_vrij.png';
+		}
+
+		if (c.checked) {
+			c2.src = 'stoel_bezet.png';
+			b2.src = 'stoel_vrij.png';
+		}else{
+			c2.src = 'stoel_vrij.png';
+		}	
+
+		if (d.checked) {
+			d2.src = 'stoel_bezet.png';
+			b2.src = 'stoel_vrij.png';
+		} else{
+			d2.src = 'stoel_vrij.png';
+		}
+	}
