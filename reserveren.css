@@ -21,7 +21,7 @@ img:not(#imgA, #imgB, #imgC, #imgD){
     height: width;
 }
 
-input:not([type=radio]), select{
+input:not([type=radio]), select, button:not(.return){
     padding: 15px 25px;
   font-size: 24px;
   text-align: center;
