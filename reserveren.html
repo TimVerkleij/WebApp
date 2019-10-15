@@ -15,70 +15,75 @@
         <button class="return"></button>
     </form>
         <input type="date" id="date" class="unstyled" oninput="datumgekozen()">
-    <select style="visibility: hidden" id="time" oninput="ready()">
-            <option value="9:00" id="9">9:00</option>
-            <option value="9:30" id="9.30">9:30</option>
-        
-            <option value="10:00" id="10">10:00</option>
-            <option value="10:30" id="10.30">10:30</option>
-        
-            <option value="11:00" id="11">11:00</option>
-            <option value="11:30" id="11.30">11:30</option>
-        
-            <option value="12:00" id="12">12:00</option>
-            <option value="12:30" id="12.30">12:30</option>
-        
-            <option value="13:00" id="13">13:00</option>
-            <option value="13:30" id="13.30">13:30</option>
-        
-            <option value="14:00" id="14">14:00</option>
-            <option value="14:30" id="14.30">14:30</option>
-        
-            <option value="15:00" id="15">15:00</option>
-            <option value="15:30" id="15.30">15:30</option>
-        
-            <option value="16:00" id="16">16:00</option>
-            <option value="16:30" id="16.30">16:30</option>
-    </select>
+        <select style="visibility: hidden" id="time" oninput="ready()">
+                <option value="9:00" id="9">9:00</option>
+                <option value="9:30" id="9.30">9:30</option>
+            
+                <option value="10:00" id="10">10:00</option>
+                <option value="10:30" id="10.30">10:30</option>
+            
+                <option value="11:00" id="11">11:00</option>
+                <option value="11:30" id="11.30">11:30</option>
+            
+                <option value="12:00" id="12">12:00</option>
+                <option value="12:30" id="12.30">12:30</option>
+            
+                <option value="13:00" id="13">13:00</option>
+                <option value="13:30" id="13.30">13:30</option>
+            
+                <option value="14:00" id="14">14:00</option>
+                <option value="14:30" id="14.30">14:30</option>
+            
+                <option value="15:00" id="15">15:00</option>
+                <option value="15:30" id="15.30">15:30</option>
+            
+                <option value="16:00" id="16">16:00</option>
+                <option value="16:30" id="16.30">16:30</option>
+        </select>
     <p id="p1" style="visibility: hidden"></p>
     <p id="p2" style="visibility: hidden">Selecteer hieronder door wie u geknipt wilt worden.</p>
     <div id="stoelen" style="display: none;">
-        <img src="stoel_vrij.png" class="icon"><p>Beschikbaar</p>
-        <img src="stoel_bezet.png" class="icon"><p>Bezet</p>
-        <table>
-            <tr>
-                <td>
-                    <label>
-                        <input id="a" type="radio" name="test" value="small" onchange="stoelGekozen()">
-                        <img src="stoel_vrij.png" id="imgA" class="stoel">
-                    </label>
-                </td>
-                <td>
-                    <label>
-                        <input id="b" type="radio" name="test" value="big" onchange="stoelGekozen()">
-                        <img src="stoel_vrij.png" id="imgB" class="stoel">
-                    </label>
-                </td>
-                <td>
-                    <label>
-                        <input id="c" type="radio" name="test" value="small" onchange="stoelGekozen()">
-                        <img src="stoel_vrij.png" id="imgC" class="stoel">
-                    </label>
-                </td>
-                <td>
-                    <label>
-                        <input id="d" type="radio" name="test" value="small" onchange="stoelGekozen()">
-                        <img src="stoel_vrij.png" id="imgD" class="stoel">
-                    </label>
-                </td>
-            </tr>
-            <tr>
-                <td><label>Bert</label></td>
-                <td><label>Ernie</label></td>
-                <td><label>Samson</label></td>
-                <td><label>Gert</label></td>
-            </tr>
-        </table>
+        <form action="" method="POST">
+            <img src="stoel_vrij.png" class="icon"><p>Beschikbaar</p>
+            <img src="stoel_bezet.png" class="icon"><p>Bezet</p>
+            <table>
+                <tr>
+                    <td>
+                        <label>
+                            <input id="a" type="radio" name="test" value="small" onchange="stoelGekozen()">
+                            <img src="stoel_vrij.png" id="imgA" class="stoel">
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input id="b" type="radio" name="test" value="big" onchange="stoelGekozen()">
+                            <img src="stoel_vrij.png" id="imgB" class="stoel">
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input id="c" type="radio" name="test" value="small" onchange="stoelGekozen()">
+                            <img src="stoel_vrij.png" id="imgC" class="stoel">
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input id="d" type="radio" name="test" value="small" onchange="stoelGekozen()">
+                            <img src="stoel_vrij.png" id="imgD" class="stoel">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Bert</label></td>
+                    <td><label>Ernie</label></td>
+                    <td><label>Samson</label></td>
+                    <td><label>Gert</label></td>
+                </tr>
+            </table>
+            <div>
+                <button type="submit">Reserveren</button>
+            </div>
+        </form>
     </div>
 </body>
 <script src="calendar.js"></script>
