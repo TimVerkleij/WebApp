@@ -95,6 +95,7 @@ function ready(){ //maakt extra tekst zichtbaar zodra de gebruiker klaar is met 
     document.getElementById("p2").style.visibility = 'visible';
     document.getElementById("stoelen").style.display = 'inline';
     document.getElementById("p1").innerHTML = "De geselecteerde datum is " + datumstrng + " om " + tijd + " uur.";
+    window.scrollBy(0, 300);
 }
 
 function stoelGekozen() {
