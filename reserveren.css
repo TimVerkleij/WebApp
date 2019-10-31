@@ -86,3 +86,11 @@ select{
         width: 97%;
     }
 }
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+}

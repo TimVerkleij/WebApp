@@ -1,1 +1,2 @@
-SELECT * FROM boekingen;
+-- INSERT INTO boekingen (Date, Time, Chair)
+-- VALUES ('2019-10-10', '12:00', 3);
