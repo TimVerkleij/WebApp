@@ -14,6 +14,7 @@
     <form action="index.html">
         <button class="return"></button>
     </form>
+    <form method="">
         <input type="date" id="date" class="unstyled" oninput="datumgekozen()">
         <select style="visibility: hidden" id="time" oninput="ready()">
                 <option value="9:00" id="9">9:00</option>
@@ -43,32 +44,31 @@
     <p id="p1" style="visibility: hidden"></p>
     <p id="p2" style="visibility: hidden">Selecteer hieronder door wie u geknipt wilt worden.</p>
     <div id="stoelen" style="display: none;">
-        <form action="" method="POST">
             <img src="stoel_vrij.png" class="icon"><p>Beschikbaar</p>
             <img src="stoel_bezet.png" class="icon"><p>Bezet</p>
             <table>
                 <tr>
                     <td>
                         <label>
-                            <input id="a" type="radio" name="test" value="small" onchange="stoelGekozen()">
+                            <input id="a" type="radio" name="test" onchange="stoelGekozen()">
                             <img src="stoel_vrij.png" id="imgA" class="stoel">
                         </label>
                     </td>
                     <td>
                         <label>
-                            <input id="b" type="radio" name="test" value="big" onchange="stoelGekozen()">
+                            <input id="b" type="radio" name="test" onchange="stoelGekozen()">
                             <img src="stoel_vrij.png" id="imgB" class="stoel">
                         </label>
                     </td>
                     <td>
                         <label>
-                            <input id="c" type="radio" name="test" value="small" onchange="stoelGekozen()">
+                            <input id="c" type="radio" name="test" onchange="stoelGekozen()">
                             <img src="stoel_vrij.png" id="imgC" class="stoel">
                         </label>
                     </td>
                     <td>
                         <label>
-                            <input id="d" type="radio" name="test" value="small" onchange="stoelGekozen()">
+                            <input id="d" type="radio" name="test" onchange="stoelGekozen()">
                             <img src="stoel_vrij.png" id="imgD" class="stoel">
                         </label>
                     </td>
