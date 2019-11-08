@@ -110,30 +110,30 @@ function stoelGekozen() {
     var d2 = document.getElementById('imgD');
     
 		if (a.checked) {
-			a2.src = 'stoel_bezet.png';
+			a2.src = '/images/stoel_bezet.png';
             console.log("Bert");
 		}else{
-			a2.src = 'stoel_vrij.png';
+			a2.src = '/images/stoel_vrij.png';
 		}
 
 		if (b.checked) {
-            b2.src = 'stoel_bezet.png';
+            b2.src = '/images/stoel_bezet.png';
             console.log("Ernie");
 		}else{
-			b2.src = 'stoel_vrij.png';
+			b2.src = '/images/stoel_vrij.png';
 		}
 
 		if (c.checked) {
-            c2.src = 'stoel_bezet.png';
+            c2.src = '/images/stoel_bezet.png';
             console.log("Samson");
 		}else{
-			c2.src = 'stoel_vrij.png';
+			c2.src = '/images/stoel_vrij.png';
 		}	
 
 		if (d.checked) {
-            d2.src = 'stoel_bezet.png';
+            d2.src = '/images/stoel_bezet.png';
             console.log("Gert");
 		} else{
-			d2.src = 'stoel_vrij.png';
+			d2.src = '/images/stoel_vrij.png';
 		}
 }
