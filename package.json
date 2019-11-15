@@ -1,0 +1,28 @@
+{
+  "name": "rezy",
+  "description": "De web applicatie voor Semester 1 - Open ICT, kappers project",
+  "main": "App.js",
+  "scripts": {
+    "start": "node App.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TimVerkleij/WebApp.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "html"
+  ],
+  "author": "Tim Verkleij",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TimVerkleij/WebApp/issues"
+  },
+  "homepage": "https://github.com/TimVerkleij/WebApp#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.4",
+    "express": "^5.0.0-alpha.7",
+    "morgan": "^1.9.1"
+  }
+}
