@@ -1,28 +1,28 @@
-html {
-  font-family: Arial, Helvetica, sans-serif;
+html{
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-  background: rgb(0, 9, 58);
-  color: white;
+    background: rgb(0, 9, 58);
+    color: white;
 }
 
-h1 {
-  text-align: center;
-  margin-top: 13px;
+h1{
+    text-align: center;
+    margin-top: 13px;
 }
 
-table {
-  text-align: center;
+table{
+    text-align: center;
 }
 
-img:not(#imgA, #imgB, #imgC, #imgD) {
-  width: 100%;
-  height: width;
+img:not(#imgA, #imgB, #imgC, #imgD){
+    width: 100%;
+    height: width;
 }
 
-input:not([type=radio]), select, button:not(.return) {
-  padding: 15px 25px;
+input:not([type=radio]), select, button:not(.return){
+    padding: 15px 25px;
   font-size: 24px;
   text-align: center;
   cursor: pointer;
@@ -36,55 +36,61 @@ input:not([type=radio]), select, button:not(.return) {
   width: 83%;
 }
 
-select {
-  width: 87%;
+select{
+    width: 87%;
 }
 
-.return {
-  position: fixed;
-  top: 5px;
-  width: 50px;
-  height: 50px;
-  background-image: url(/images/arrow.png);
-  background-size: 100%;
-  border: 0px;
-  background-color: transparent;
+.return{
+    position: fixed;
+    top: 5px;
+    width: 50px;
+    height: 50px;
+    background-image: url(/images/arrow.png);
+    background-size: 100%;
+    border: 0px;
+    background-color: transparent;
 }
 
-.stoel {
-  width: 100%;
+.stoel{
+    width: 100%;
 }
 
-.icon {
-  width: 20px;
-  height: width;
-  float: left;
-  margin-right: 5px;
+.icon{
+    width: 20px;
+    height: width;
+    float: left;
+    margin-right: 5px;
 }
+
+.middle {
+    text-align: center;
+    font-size: x-large;
+}
+
 
 .unstyled::-webkit-inner-spin-button, .unstyled::-webkit-clear-button {
-  display: none;
-  -webkit-appearance: none;
+    display: none;
+    -webkit-appearance: none;
 }
 
-[type=radio] {
-  position: absolute;
-  opacity: 0;
-  width: 0;
-  height: 0;
+[type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
-
-[type=radio]+img {
-  cursor: pointer;
+  
+[type=radio] + img {
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
-  .return {
-    right: 5px;
-  }
-  select {
-    width: 97%;
-  }
+    .return {
+      right: 5px;
+    }
+    select{
+        width: 97%;
+    }
 }
 
 input, textarea, button, select, a {
