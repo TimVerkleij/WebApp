@@ -42,6 +42,19 @@ select {
     width: 87%;
 }
 
+header {
+    background-color: #1DB954;
+    font-size: 30px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    position: fixed;
+    top: -50px;
+    width: 100%;
+    transition: top 0.5s;
+}
+
 .return {
     position: fixed;
     top: 5px;

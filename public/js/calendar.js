@@ -11,7 +11,9 @@ var dd = today.getDate();
 var dd2 = today.getDate() + 1;
 var mm = today.getMonth() + 1; //January is 0!
 var mm2 = today.getMonth() + 1;
+var mm3 = today.getMonth() + 3;
 var yyyy = today.getFullYear();
+var yyyy2 = today.getFullYear();
 
 //zorgt ervoor dat er bij de dagen 1 tot en met 9 een 0 staat voor het getal. 9 april 2019 wordt
 //  bijvoorbeeld 09-04-2019
@@ -69,11 +71,25 @@ if (yyyy % 4 == 0 && mm2 == 2 && dd == 29) {
         }
     }
 }
+// if (mm == 11) {
+//     mm3 = '0' + 1;
+//     yyyy2 = yyyy + 1;
+// }
+// if (mm == 12) {
+//     mm3 = '0' + 2;
+//     yyyy2 = yyyy + 1;
+// }
+// if (mm == 13) {
+//     mm3 = '0' + 3;
+//     yyyy2 = yyyy + 1;
+// }
 
 today = yyyy + '-' + mm + '-' + dd;
 tomorrow = yyyy + '-' + mm2 + '-' + dd2;
+// maxReservation = yyyy2 + '-' + mm3 + '-' + dd;
 document.getElementById("date").setAttribute("min", tomorrow); //zorgt ervoor dat je alleen een datum kan kiezen die later is dan vandaag
 document.getElementById("date").setAttribute("value", today); //zet de waarde van de input op vandaag
+// document.getElementById("date").setAttribute("max", maxReservation);
 
 
 function datumgekozen() {
@@ -136,4 +152,18 @@ function stoelGekozen() {
     } else {
         d2.src = '/images/stoel_vrij.png';
     }
+}
+
+
+var header = document.getElementById("header");
+header.style.top = "-50px";
+
+function notDoneYet() {
+    header.style.display = "block";
+    header.style.top = "0";
+    setTimeout(justKidding, 7000);
+}
+
+function justKidding() {
+    header.innerHTML = "Not Really...";
 }

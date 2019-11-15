@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,17 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/reserveren.css">
     <title>Reserveren</title>
 </head>
+
 <body>
+    <header id="header">Reservering Voltooid.</header>
     <h1>Reserveren</h1>
-    <p>Kies hieronder een datum voor uw afspraak.<br>
-    Het is niet mogelijk om een afspraak voor vandaag te plannen.</p>
+    <p>Kies hieronder een datum voor uw afspraak.<br> Het is niet mogelijk om een afspraak voor vandaag te plannen.</p>
     <form action="index.html">
         <button class="return"></button>
     </form>
-    <form method="">
-        <input type="date" id="date" class="unstyled" oninput="datumgekozen()">
-        <select style="visibility: hidden" id="time" oninput="ready()">
+    <!-- <form method=""> -->
+    <input type="date" id="date" class="unstyled" oninput="datumgekozen()">
+    <select style="visibility: hidden" id="time" oninput="ready()">
                 <option value="9:00" id="9">9:00</option>
                 <option value="9:30" id="9.30">9:30</option>
             
@@ -44,47 +46,51 @@
     <p id="p1" style="visibility: hidden" class="middle"></p>
     <p id="p2" style="visibility: hidden" class="middle">Selecteer hieronder door wie u geknipt wilt worden.</p>
     <div id="stoelen" style="display: none;">
-            <img src="/images/stoel_vrij.png" class="icon"><p>Beschikbaar</p>
-            <img src="/images/stoel_bezet.png" class="icon"><p>Bezet</p>
-            <table>
-                <tr>
-                    <td>
-                        <label>
+        <img src="/images/stoel_vrij.png" class="icon">
+        <p>Beschikbaar</p>
+        <img src="/images/stoel_bezet.png" class="icon">
+        <p>Bezet</p>
+        <table>
+            <tr>
+                <td>
+                    <label>
                             <input id="a" type="radio" name="test" onchange="stoelGekozen()">
                             <img src="/images/stoel_vrij.png" id="imgA" class="stoel">
                         </label>
-                    </td>
-                    <td>
-                        <label>
+                </td>
+                <td>
+                    <label>
                             <input id="b" type="radio" name="test" onchange="stoelGekozen()">
                             <img src="/images/stoel_vrij.png" id="imgB" class="stoel">
                         </label>
-                    </td>
-                    <td>
-                        <label>
+                </td>
+                <td>
+                    <label>
                             <input id="c" type="radio" name="test" onchange="stoelGekozen()">
                             <img src="/images/stoel_vrij.png" id="imgC" class="stoel">
                         </label>
-                    </td>
-                    <td>
-                        <label>
+                </td>
+                <td>
+                    <label>
                             <input id="d" type="radio" name="test" onchange="stoelGekozen()">
                             <img src="/images/stoel_vrij.png" id="imgD" class="stoel">
                         </label>
-                    </td>
-                </tr>
-                <tr>
-                    <td><label>Bert</label></td>
-                    <td><label>Ernie</label></td>
-                    <td><label>Samson</label></td>
-                    <td><label>Gert</label></td>
-                </tr>
-            </table>
-            <div>
-                <button type="submit">Reserveren</button>
-            </div>
-        </form>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Bert</label></td>
+                <td><label>Ernie</label></td>
+                <td><label>Samson</label></td>
+                <td><label>Gert</label></td>
+            </tr>
+        </table>
+        <div>
+            <!-- <button type="submit">Reserveren</button> -->
+        </div>
+        <!-- </form> -->
+        <button onclick="notDoneYet()">Reserveren</button>
     </div>
 </body>
 <script src="js/calendar.js"></script>
+
 </html>
