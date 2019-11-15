@@ -2,5 +2,5 @@
 
 The current active website is findable [here](http://reserveren.epizy.com/?i=1).
 
-Website is served by [IninityFree](https://infinityfree.net/?utm_campaign=epiz-root&utm_medium=referral&utm_source=if-users).
+Website is served by [InfinityFree](https://infinityfree.net/).
 Served by a normal webserver with PHP included.
