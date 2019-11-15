@@ -1,4 +1,4 @@
-html{
+html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -7,40 +7,42 @@ body {
     color: white;
 }
 
-h1{
+h1 {
     text-align: center;
     margin-top: 13px;
 }
 
-table{
+table {
     text-align: center;
 }
 
-img:not(#imgA, #imgB, #imgC, #imgD){
+img:not(#imgA, #imgB, #imgC, #imgD) {
     width: 100%;
     height: width;
 }
 
-input:not([type=radio]), select, button:not(.return){
+input:not([type=radio]),
+select,
+button:not(.return) {
     padding: 15px 25px;
-  font-size: 24px;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  background-color: #1DB954;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px rgb(23, 141, 65);
-  margin: 7px;
-  width: 83%;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #1DB954;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(23, 141, 65);
+    margin: 7px;
+    width: 83%;
 }
 
-select{
+select {
     width: 87%;
 }
 
-.return{
+.return {
     position: fixed;
     top: 5px;
     width: 50px;
@@ -51,11 +53,11 @@ select{
     background-color: transparent;
 }
 
-.stoel{
+.stoel {
     width: 100%;
 }
 
-.icon{
+.icon {
     width: 20px;
     height: width;
     float: left;
@@ -67,32 +69,36 @@ select{
     font-size: x-large;
 }
 
-
-.unstyled::-webkit-inner-spin-button, .unstyled::-webkit-clear-button {
+.unstyled::-webkit-inner-spin-button,
+.unstyled::-webkit-clear-button {
     display: none;
     -webkit-appearance: none;
 }
 
-[type=radio] { 
+[type=radio] {
     position: absolute;
     opacity: 0;
     width: 0;
     height: 0;
 }
-  
-[type=radio] + img {
+
+[type=radio]+img {
     cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
     .return {
-      right: 5px;
+        right: 5px;
     }
-    select{
+    select {
         width: 97%;
     }
 }
 
-input, textarea, button, select, a {
-  -webkit-tap-highlight-color: transparent;
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
 }

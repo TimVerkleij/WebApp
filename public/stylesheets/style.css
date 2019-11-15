@@ -1,6 +1,6 @@
 @media only screen and (max-width: 600px) {
     .return {
-      right: 5px;
+        right: 5px;
     }
 }
 
@@ -9,51 +9,51 @@ body {
     color: white;
 }
 
-h1{
+h1 {
     text-align: center;
     color: rgb(142, 228, );
-    
 }
 
-h2{
+h2 {
     font-style: italic;
     text-align: left;
     text-transform: uppercase;
 }
 
-h3, p{
+h3,
+p {
     text-align: left;
 }
 
-button:not(.return){
+button:not(.return) {
     padding: 15px 25px;
-  font-size: 24px;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  background-color: #1DB954;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px rgb(23, 141, 65);
-  margin: 7px;
-  width: 98%;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #1DB954;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(23, 141, 65);
+    margin: 7px;
+    width: 98%;
 }
 
-input{
+input {
     padding: 15px 25px;
-  font-size: 24px;
-  text-align: center;
-  align-content: center;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  background-color: #8c00ff;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
-  margin: 7px;
-  width: 75%;
+    font-size: 24px;
+    text-align: center;
+    align-content: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #8c00ff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    margin: 7px;
+    width: 75%;
 }
 
 button:hover:not(.return) {
@@ -66,15 +66,15 @@ button:active:not(.return) {
     transform: translateY(4px);
 }
 
-div{
+div {
     text-align: center;
 }
 
-.extra{
+.extra {
     font-size: 12px;
 }
 
-.return{
+.return {
     position: fixed;
     top: 5px;
     width: 50px;
