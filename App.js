@@ -11,4 +11,6 @@ app.use(cookieParser());
 app.use(Express.json());
 app.use(Express.static('public/'));
 
+app.use(require('./routes/api'));
+
 app.listen(8080, () => console.info('Webserver is listening http://localhost:8080/'));
