@@ -84,4 +84,9 @@ div {
     border: 0px;
     background-color: transparent;
     box-shadow: none;
+    cursor: pointer;
+}
+
+.return:hover {
+    border: 2px solid transparent;
 }

@@ -53,6 +53,7 @@ header {
     top: -50px;
     width: 100%;
     transition: top 0.5s;
+    z-index: 2;
 }
 
 .return {
@@ -64,6 +65,11 @@ header {
     background-size: 100%;
     border: 0px;
     background-color: transparent;
+    cursor: pointer;
+}
+
+.return:hover {
+    border: 2px solid transparent;
 }
 
 .stoel {
