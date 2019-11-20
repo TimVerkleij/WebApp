@@ -166,4 +166,9 @@ function notDoneYet() {
 
 function justKidding() {
     header.innerHTML = "Not Really...";
+    setTimeout(goUp, 2500);
+}
+
+function goUp(){
+    header.style.top = "-50px";
 }
