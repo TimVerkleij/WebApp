@@ -1,10 +1,10 @@
-/* JavaScript functions voor Testing.html file */
+//!  JavaScript functions voor reserveren.html file
 
-//maakt variabelen aan om te achterhalen welke dag het is.
+//TODO maakt variabelen aan om te achterhalen welke dag het is.
 var selectedDate = document.getElementsByTagName('input')[0];
 var selectedDay = document.getElementsByTagName('input')[0];
 
-//maakt variabelen aan voor de dag, maand en jaar.
+//TODO maakt variabelen aan voor de dag, maand en jaar.
 var today = new Date();
 var tomorrow = new Date();
 var dd = today.getDate();
@@ -15,8 +15,9 @@ var mm3 = today.getMonth() + 3;
 var yyyy = today.getFullYear();
 var yyyy2 = today.getFullYear();
 
-//zorgt ervoor dat er bij de dagen 1 tot en met 9 een 0 staat voor het getal. 9 april 2019 wordt
-//  bijvoorbeeld 09-04-2019
+// TODO zorgt ervoor dat er bij de dagen 1 tot en met 9 een 0 staat voor het getal. 9 april 2019 wordt
+// TODO  bijvoorbeeld 09-04-2019
+
 if (dd < 10) {
     dd = '0' + dd
 }

@@ -11,7 +11,9 @@ body {
 
 h1 {
     text-align: center;
-    color: rgb(142, 228, );
+    color: #1DB954;
+    border-bottom: 3px double white;
+    padding-bottom: 5px;
 }
 
 h2 {
@@ -79,7 +81,7 @@ div {
     top: 5px;
     width: 50px;
     height: 50px;
-    background-image: url(/images/arrow.png);
+    background-image: url(../images/arrow.png);
     background-size: 100%;
     border: 0px;
     background-color: transparent;
@@ -89,4 +91,11 @@ div {
 
 .return:hover {
     border: 2px solid transparent;
+}
+
+.barberImage {
+    width: 50%;
+    float: right;
+    object-fit: cover;
+    padding-bottom: 20px;
 }
