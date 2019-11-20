@@ -72,6 +72,11 @@ div {
     text-align: center;
 }
 
+#image2 {
+    line-height: 1.5em;
+    list-style-image: url(/public/images/scissors2.png);
+  }
+
 .extra {
     font-size: 12px;
 }
@@ -95,6 +100,13 @@ div {
 
 .barberImage {
     width: 50%;
+    float: right;
+    object-fit: cover;
+    padding-bottom: 20px;
+}
+
+.barberImage2 {
+    width: 33%;
     float: right;
     object-fit: cover;
     padding-bottom: 20px;
