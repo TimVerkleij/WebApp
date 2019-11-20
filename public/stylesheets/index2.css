@@ -1,9 +1,10 @@
-legend{
+legend {
     border-bottom: 1px solid black;
     width: 100%;
     margin-bottom: 20px;
 }
-input{
+
+input {
     display: block;
     margin: 5px;
 }
