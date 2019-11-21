@@ -170,6 +170,6 @@ function justKidding() {
     setTimeout(goUp, 2500);
 }
 
-function goUp(){
+function goUp() {
     header.style.top = "-50px";
 }
