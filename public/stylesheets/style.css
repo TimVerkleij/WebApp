@@ -99,13 +99,6 @@ div {
 }
 
 .barberImage {
-    width: 50%;
-    float: right;
-    object-fit: cover;
-    padding-bottom: 20px;
-}
-
-.barberImage2 {
     width: 33%;
     float: right;
     object-fit: cover;
