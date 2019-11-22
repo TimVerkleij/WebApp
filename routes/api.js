@@ -13,12 +13,14 @@ router.post('/api/test', (req, res)=>{
     console.log(req.body)
     const newObj = {
         name: req.body.name,
+        lastName: req.body.lastName,
         email: req.body.email,
         password: req.body.password
     }
     res.json(newObj)
     db.insert({
         name: req.body.name,
+        lastName: req.body.lastName,
         email: req.body.email,
         password: req.body.password
     });
