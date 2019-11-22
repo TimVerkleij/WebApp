@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/TimVerkleij/WebApp#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.4",
     "express": "^5.0.0-alpha.7",
     "morgan": "^1.9.1",
