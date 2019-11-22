@@ -9,7 +9,7 @@ var today = new Date();
 var tomorrow = new Date();
 var dd = today.getDate();
 var dd2 = today.getDate() + 1;
-var mm = today.getMonth() + 1; //January is 0!
+var mm = today.getMonth() + 1; //! January is 0!
 var mm2 = today.getMonth() + 1;
 var mm3 = today.getMonth() + 3;
 var yyyy = today.getFullYear();
@@ -88,15 +88,15 @@ if (yyyy % 4 == 0 && mm2 == 2 && dd == 29) {
 today = yyyy + '-' + mm + '-' + dd;
 tomorrow = yyyy + '-' + mm2 + '-' + dd2;
 // maxReservation = yyyy2 + '-' + mm3 + '-' + dd;
-document.getElementById("date").setAttribute("min", tomorrow); //zorgt ervoor dat je alleen een datum kan kiezen die later is dan vandaag
-document.getElementById("date").setAttribute("value", today); //zet de waarde van de input op vandaag
+document.getElementById("date").setAttribute("min", tomorrow); //TODO zorgt ervoor dat je alleen een datum kan kiezen die later is dan vandaag
+document.getElementById("date").setAttribute("value", today); //TODO zet de waarde van de input op vandaag
 // document.getElementById("date").setAttribute("max", maxReservation);
 
 
 function datumgekozen() {
     document.getElementById("time").style.visibility = 'visible';
     var help = document.getElementById("date").getAttribute("value");
-    // zorgt ervoor dat een aantal data niet geselecteerd kunnen worden.
+    //TODO zorgt ervoor dat een aantal data niet geselecteerd kunnen worden.
     document.getElementById("14.30").setAttribute("disabled", true);
     document.getElementById("15.30").setAttribute("disabled", true);
     document.getElementById("12").setAttribute("disabled", true);
@@ -104,7 +104,7 @@ function datumgekozen() {
     document.getElementById("10").setAttribute("disabled", true);
 }
 
-function ready() { //maakt extra tekst zichtbaar zodra de gebruiker klaar is met een datum en tijd selecteren.
+function ready() { //TODO maakt extra tekst zichtbaar zodra de gebruiker klaar is met een datum en tijd selecteren.
     var datum = document.getElementById("date").value;
     var tijd = document.getElementById("time").value;
     var datumstrng = datum.toString();
@@ -165,7 +165,7 @@ function notDoneYet() {
     setTimeout(justKidding, 7000);
 }
 
-function justKidding() {
+function justKidding() { 
     header.innerHTML = "Not Really...";
     setTimeout(goUp, 2500);
 }
