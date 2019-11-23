@@ -115,17 +115,18 @@ function ready() { //TODO maakt extra tekst zichtbaar zodra de gebruiker klaar i
     window.scrollBy(0, 300);
 }
 
+
+var bert = document.getElementById('bert');
+var ernie = document.getElementById('ernie');
+var samson = document.getElementById('samson');
+var gert = document.getElementById('gert');
+
+var bert2 = document.getElementById('imgA');
+var ernie2 = document.getElementById('imgB');
+var samson2 = document.getElementById('imgC');
+var gert2 = document.getElementById('imgD');
+
 function stoelGekozen() {
-    var bert = document.getElementById('bert');
-    var ernie = document.getElementById('ernie');
-    var samson = document.getElementById('samson');
-    var gert = document.getElementById('gert');
-
-    var bert2 = document.getElementById('imgA');
-    var ernie2 = document.getElementById('imgB');
-    var samson2 = document.getElementById('imgC');
-    var gert2 = document.getElementById('imgD');
-
     if (bert.checked) {
         bert2.src = '/images/stoel_bezet.png';
         console.log("Bert");
@@ -165,7 +166,7 @@ function notDoneYet() {
     setTimeout(justKidding, 7000);
 }
 
-function justKidding() { 
+function justKidding() {
     header.innerHTML = "Not Really...";
     setTimeout(goUp, 2500);
 }

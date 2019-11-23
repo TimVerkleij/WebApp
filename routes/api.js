@@ -30,12 +30,13 @@ router.post('/api/reserveren', (req, res) => {
     const newObj = {
         date: req.body.date,
         time: req.body.time,
-        radio: req.body.radio
+        radio: req.body.radio,
     }
     res.json(newObj)
     db.insert({
         date: req.body.date,
-        time: req.body.time
+        time: req.body.time,
+        radio: req.body.radio,
     });
 })
 

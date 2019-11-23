@@ -17,8 +17,8 @@
         <button class="return"></button>
     </form>
     <form method="POST" action="/api/reserveren">
-    <input type="date" id="date" class="unstyled" oninput="datumgekozen()" name="date">
-    <select style="visibility: hidden" id="time" oninput="ready()" name="time">
+        <input type="date" id="date" class="unstyled" oninput="datumgekozen()" name="date">
+        <select style="visibility: hidden" id="time" oninput="ready()" name="time">
         <option value="9:00" id="9">9:00</option>
         <option value="9:30" id="9.30">9:30</option>
 
@@ -43,52 +43,52 @@
         <option value="16:00" id="16">16:00</option>
         <option value="16:30" id="16.30">16:30</option>
     </select>
-    <p id="p1" style="visibility: hidden" class="middle"></p>
-    <p id="p2" style="visibility: hidden" class="middle">Selecteer hieronder door wie u geknipt wilt worden.</p>
-    <div id="stoelen" style="display: none;">
-        <img src="/images/stoel_vrij.png" class="icon">
-        <p>Beschikbaar</p>
-        <img src="/images/stoel_bezet.png" class="icon">
-        <p>Bezet</p>
-        <table>
-            <tr>
-                <td>
-                    <label>
+        <p id="p1" style="visibility: hidden" class="middle"></p>
+        <p id="p2" style="visibility: hidden" class="middle">Selecteer hieronder door wie u geknipt wilt worden.</p>
+        <div id="stoelen" style="display: none;">
+            <img src="/images/stoel_vrij.png" class="icon">
+            <p>Beschikbaar</p>
+            <img src="/images/stoel_bezet.png" class="icon">
+            <p>Bezet</p>
+            <table>
+                <tr>
+                    <td>
+                        <label>
                         <input id="bert" type="radio" onchange="stoelGekozen()" name="radio">
                         <img src="/images/stoel_vrij.png" id="imgA" class="stoel">
                     </label>
-                </td>
-                <td>
-                    <label>
+                    </td>
+                    <td>
+                        <label>
                         <input id="ernie" type="radio" onchange="stoelGekozen()" name="radio">
                         <img src="/images/stoel_vrij.png" id="imgB" class="stoel">
                     </label>
-                </td>
-                <td>
-                    <label>
+                    </td>
+                    <td>
+                        <label>
                         <input id="samson" type="radio" onchange="stoelGekozen()" name="radio">
                         <img src="/images/stoel_vrij.png" id="imgC" class="stoel">
                     </label>
-                </td>
-                <td>
-                    <label>
+                    </td>
+                    <td>
+                        <label>
                         <input id="gert" type="radio" onchange="stoelGekozen()" name="radio">
                         <img src="/images/stoel_vrij.png" id="imgD" class="stoel">
                     </label>
-                </td>
-            </tr>
-            <tr>
-                <td><label>Bert</label></td>
-                <td><label>Ernie</label></td>
-                <td><label>Samson</label></td>
-                <td><label>Gert</label></td>
-            </tr>
-        </table>
-        <div>
-            <input type="submit">
-        </div>
-        </form>
-        <!-- <button onclick="notDoneYet()">Reserveren</button> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Bert</label></td>
+                    <td><label>Ernie</label></td>
+                    <td><label>Samson</label></td>
+                    <td><label>Gert</label></td>
+                </tr>
+            </table>
+            <div>
+                <input type="submit">
+            </div>
+    </form>
+    <!-- <button onclick="notDoneYet()">Reserveren</button> -->
     </div>
 </body>
 <script src="js/calendar.js"></script>
