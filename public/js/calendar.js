@@ -116,42 +116,42 @@ function ready() { //TODO maakt extra tekst zichtbaar zodra de gebruiker klaar i
 }
 
 function stoelGekozen() {
-    var a = document.getElementById('a');
-    var b = document.getElementById('b');
-    var c = document.getElementById('c');
-    var d = document.getElementById('d');
+    var bert = document.getElementById('bert');
+    var ernie = document.getElementById('ernie');
+    var samson = document.getElementById('samson');
+    var gert = document.getElementById('gert');
 
-    var a2 = document.getElementById('imgA');
-    var b2 = document.getElementById('imgB');
-    var c2 = document.getElementById('imgC');
-    var d2 = document.getElementById('imgD');
+    var bert2 = document.getElementById('imgA');
+    var ernie2 = document.getElementById('imgB');
+    var samson2 = document.getElementById('imgC');
+    var gert2 = document.getElementById('imgD');
 
-    if (a.checked) {
-        a2.src = '/images/stoel_bezet.png';
+    if (bert.checked) {
+        bert2.src = '/images/stoel_bezet.png';
         console.log("Bert");
     } else {
-        a2.src = '/images/stoel_vrij.png';
+        bert2.src = '/images/stoel_vrij.png';
     }
 
-    if (b.checked) {
-        b2.src = '/images/stoel_bezet.png';
+    if (ernie.checked) {
+        ernie2.src = '/images/stoel_bezet.png';
         console.log("Ernie");
     } else {
-        b2.src = '/images/stoel_vrij.png';
+        ernie2.src = '/images/stoel_vrij.png';
     }
 
-    if (c.checked) {
-        c2.src = '/images/stoel_bezet.png';
+    if (samson.checked) {
+        samson2.src = '/images/stoel_bezet.png';
         console.log("Samson");
     } else {
-        c2.src = '/images/stoel_vrij.png';
+        samson2.src = '/images/stoel_vrij.png';
     }
 
-    if (d.checked) {
-        d2.src = '/images/stoel_bezet.png';
+    if (gert.checked) {
+        gert2.src = '/images/stoel_bezet.png';
         console.log("Gert");
     } else {
-        d2.src = '/images/stoel_vrij.png';
+        gert2.src = '/images/stoel_vrij.png';
     }
 }
 

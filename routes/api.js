@@ -9,7 +9,7 @@ router.get('/api/helloworld', (req, res) => {
     res.json(obj);
 });
 
-router.post('/api/test', (req, res)=>{
+router.post('/api/test', (req, res) => {
     console.log(req.body)
     const newObj = {
         name: req.body.name,
@@ -23,6 +23,19 @@ router.post('/api/test', (req, res)=>{
         lastName: req.body.lastName,
         email: req.body.email,
         password: req.body.password
+    });
+})
+
+router.post('/api/reserveren', (req, res) => {
+    const newObj = {
+        date: req.body.date,
+        time: req.body.time,
+        radio: req.body.radio
+    }
+    res.json(newObj)
+    db.insert({
+        date: req.body.date,
+        time: req.body.time
     });
 })
 
