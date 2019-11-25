@@ -95,7 +95,7 @@ document.getElementById("date").setAttribute("value", today); //TODO zet de waar
 
 function datumgekozen() {
     document.getElementById("time").style.visibility = 'visible';
-    var help = document.getElementById("date").getAttribute("value");
+    // var help = document.getElementById("date").getAttribute("value"); //! unused var, might be deleted later
     //TODO zorgt ervoor dat een aantal data niet geselecteerd kunnen worden.
     document.getElementById("14.30").setAttribute("disabled", true);
     document.getElementById("15.30").setAttribute("disabled", true);
