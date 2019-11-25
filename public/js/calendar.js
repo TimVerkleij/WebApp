@@ -92,7 +92,7 @@ tomorrow = yyyy + '-' + mm2 + '-' + dd2;
 maxReservation = yyyy2 + '-' + mm3 + '-' + dd;
 document.getElementById("date").setAttribute("min", tomorrow); //TODO zorgt ervoor dat je alleen een datum kan kiezen die later is dan vandaag
 document.getElementById("date").setAttribute("value", today); //TODO zet de waarde van de input op vandaag
-document.getElementById("date").setAttribute("max", maxReservation);
+document.getElementById("date").setAttribute("max", maxReservation); //TODO zet de maximale waarde die je kunt invullen op 2 maanden verder
 
 
 function datumgekozen() {
