@@ -128,6 +128,8 @@ var ernie2 = document.getElementById('imgB');
 var samson2 = document.getElementById('imgC');
 var gert2 = document.getElementById('imgD');
 
+var submitBtn = document.getElementById('submitBtn');
+
 function stoelGekozen() {
     if (bert.checked) {
         bert2.src = '/images/stoel_bezet.png';
@@ -156,6 +158,8 @@ function stoelGekozen() {
     } else {
         gert2.src = '/images/stoel_vrij.png';
     }
+    submitBtn.style.display = "inline";
+    window.scrollBy(0, 300);
 }
 
 
