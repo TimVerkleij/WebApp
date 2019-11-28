@@ -44,50 +44,52 @@
         <option value="16:00" id="16">16:00</option>
         <option value="16:30" id="16.30">16:30</option>
     </select>
-        <p id="p1" style="visibility: hidden" class="middle"></p>
-        <p id="p2" style="visibility: hidden" class="middle">Selecteer hieronder door wie u geknipt wilt worden.</p>
-        <div id="stoelen" style="display: none;">
+        <div style="display: none;" id="info">
+            <p id="p1" class="middle"></p>
+            <p id="p2" class="middle">Selecteer hieronder door wie u geknipt wilt worden.</p>
             <img src="/images/stoel_vrij.png" class="icon">
             <p>Beschikbaar</p>
             <img src="/images/stoel_bezet.png" class="icon">
             <p>Bezet</p>
-            <table>
-                <tr>
-                    <td>
-                        <label>
+        </div>
+        <div id="stoelen" style="display: none;">
+        <table>
+            <tr>
+                <td>
+                    <label>
                         <input id="bert" type="radio" onchange="stoelGekozen()" name="radio" value="Bert">
                         <img src="/images/stoel_vrij.png" id="imgA" class="stoel">
                     </label>
-                    </td>
-                    <td>
-                        <label>
+                </td>
+                <td>
+                    <label>
                         <input id="ernie" type="radio" onchange="stoelGekozen()" name="radio" value="Ernie">
                         <img src="/images/stoel_vrij.png" id="imgB" class="stoel">
                     </label>
-                    </td>
-                    <td>
-                        <label>
+                </td>
+                <td>
+                    <label>
                         <input id="samson" type="radio" onchange="stoelGekozen()" name="radio" value="Samson">
                         <img src="/images/stoel_vrij.png" id="imgC" class="stoel">
                     </label>
-                    </td>
-                    <td>
-                        <label>
+                </td>
+                <td>
+                    <label>
                         <input id="gert" type="radio" onchange="stoelGekozen()" name="radio" value="Gert">
                         <img src="/images/stoel_vrij.png" id="imgD" class="stoel">
                     </label>
-                    </td>
-                </tr>
-                <tr>
-                    <td><label>Bert</label></td>
-                    <td><label>Ernie</label></td>
-                    <td><label>Samson</label></td>
-                    <td><label>Gert</label></td>
-                </tr>
-            </table>
-            <div id="submitBtn" style="display: none;">
-                <input type="submit" class="submitBtn">
-            </div>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Bert</label></td>
+                <td><label>Ernie</label></td>
+                <td><label>Samson</label></td>
+                <td><label>Gert</label></td>
+            </tr>
+        </table>
+        <div id="submitBtn" style="display: none;">
+            <input type="submit" class="submitBtn">
+        </div>
     </form>
     <!-- <button onclick="notDoneYet()">Reserveren</button> -->
     </div>

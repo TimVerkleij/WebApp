@@ -110,13 +110,13 @@ function ready() { //TODO maakt extra tekst zichtbaar zodra de gebruiker klaar i
     var datum = document.getElementById("date").value;
     var tijd = document.getElementById("time").value;
     var datumstrng = datum.toString();
-    document.getElementById("p1").style.visibility = 'visible';
-    document.getElementById("p2").style.visibility = 'visible';
+    // document.getElementById("p1").style.display = 'inline';
+    // document.getElementById("p2").style.display = 'inline';
+    document.getElementById('info').style.display = 'block';
     document.getElementById("stoelen").style.display = 'inline';
     document.getElementById("p1").innerHTML = "De geselecteerde datum is: " + "</br>" + (datumstrng + " om " + tijd + " uur.").bold();
     window.scrollBy(0, 300);
 }
-
 
 var bert = document.getElementById('bert');
 var ernie = document.getElementById('ernie');
