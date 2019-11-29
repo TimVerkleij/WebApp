@@ -20,30 +20,30 @@
     <form method="POST" action="/api/reserveren">
         <input type="date" id="date" class="unstyled" oninput="datumgekozen()" name="date">
         <select style="visibility: hidden" id="time" oninput="ready()" name="time">
-        <option value="9:00" id="9">9:00</option>
-        <option value="9:30" id="9.30">9:30</option>
+            <option value="9:00" id="9">9:00</option>
+            <option value="9:30" id="9.30">9:30</option>
 
-        <option value="10:00" id="10">10:00</option>
-        <option value="10:30" id="10.30">10:30</option>
+            <option value="10:00" id="10">10:00</option>
+            <option value="10:30" id="10.30">10:30</option>
 
-        <option value="11:00" id="11">11:00</option>
-        <option value="11:30" id="11.30">11:30</option>
+            <option value="11:00" id="11">11:00</option>
+            <option value="11:30" id="11.30">11:30</option>
 
-        <option value="12:00" id="12">12:00</option>
-        <option value="12:30" id="12.30">12:30</option>
+            <option value="12:00" id="12">12:00</option>
+            <option value="12:30" id="12.30">12:30</option>
 
-        <option value="13:00" id="13">13:00</option>
-        <option value="13:30" id="13.30">13:30</option>
+            <option value="13:00" id="13">13:00</option>
+            <option value="13:30" id="13.30">13:30</option>
 
-        <option value="14:00" id="14">14:00</option>
-        <option value="14:30" id="14.30">14:30</option>
+            <option value="14:00" id="14">14:00</option>
+            <option value="14:30" id="14.30">14:30</option>
 
-        <option value="15:00" id="15">15:00</option>
-        <option value="15:30" id="15.30">15:30</option>
+            <option value="15:00" id="15">15:00</option>
+            <option value="15:30" id="15.30">15:30</option>
 
-        <option value="16:00" id="16">16:00</option>
-        <option value="16:30" id="16.30">16:30</option>
-    </select>
+            <option value="16:00" id="16">16:00</option>
+            <option value="16:30" id="16.30">16:30</option>
+        </select>
         <div style="display: none;" id="info">
             <p id="p1" class="middle"></p>
             <p id="p2" class="middle">Selecteer hieronder door wie u geknipt wilt worden.</p>
@@ -53,45 +53,45 @@
             <p>Bezet</p>
         </div>
         <div id="stoelen" style="display: none;">
-        <table>
-            <tr>
-                <td>
-                    <label>
-                        <input id="bert" type="radio" onchange="stoelGekozen()" name="radio" value="Bert">
-                        <img src="/images/stoel_vrij.png" id="imgA" class="stoel">
-                    </label>
-                </td>
-                <td>
-                    <label>
-                        <input id="ernie" type="radio" onchange="stoelGekozen()" name="radio" value="Ernie">
-                        <img src="/images/stoel_vrij.png" id="imgB" class="stoel">
-                    </label>
-                </td>
-                <td>
-                    <label>
-                        <input id="samson" type="radio" onchange="stoelGekozen()" name="radio" value="Samson">
-                        <img src="/images/stoel_vrij.png" id="imgC" class="stoel">
-                    </label>
-                </td>
-                <td>
-                    <label>
-                        <input id="gert" type="radio" onchange="stoelGekozen()" name="radio" value="Gert">
-                        <img src="/images/stoel_vrij.png" id="imgD" class="stoel">
-                    </label>
-                </td>
-            </tr>
-            <tr>
-                <td><label>Bert</label></td>
-                <td><label>Ernie</label></td>
-                <td><label>Samson</label></td>
-                <td><label>Gert</label></td>
-            </tr>
-        </table>
-        <div id="submitBtn" style="display: none;">
-            <input type="submit" class="submitBtn">
-        </div>
+            <table>
+                <tr>
+                    <td>
+                        <label>
+                            <input id="bert" type="radio" onchange="stoelGekozen()" name="radio" value="Bert">
+                            <img src="/images/stoel_vrij.png" id="imgA" class="stoel">
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input id="ernie" type="radio" onchange="stoelGekozen()" name="radio" value="Ernie">
+                            <img src="/images/stoel_vrij.png" id="imgB" class="stoel">
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input id="samson" type="radio" onchange="stoelGekozen()" name="radio" value="Samson">
+                            <img src="/images/stoel_vrij.png" id="imgC" class="stoel">
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input id="gert" type="radio" onchange="stoelGekozen()" name="radio" value="Gert">
+                            <img src="/images/stoel_vrij.png" id="imgD" class="stoel">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Bert</label></td>
+                    <td><label>Ernie</label></td>
+                    <td><label>Samson</label></td>
+                    <td><label>Gert</label></td>
+                </tr>
+            </table>
+            <div id="submitBtn" style="display: none;">
+                <input type="submit" class="submitBtn">
+            </div>
     </form>
-    <!-- <button onclick="notDoneYet()">Reserveren</button> -->
+    <!-- <button onclick="notDoneYet()">Reserveren</button> --> <!--! Deprecated button-->
     </div>
 </body>
 <script src="js/calendar.js"></script>

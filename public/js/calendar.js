@@ -94,10 +94,8 @@ document.getElementById("date").setAttribute("min", tomorrow); //TODO zorgt ervo
 document.getElementById("date").setAttribute("value", today); //TODO zet de waarde van de input op vandaag
 document.getElementById("date").setAttribute("max", maxReservation); //TODO zet de maximale waarde die je kunt invullen op 2 maanden verder
 
-
 function datumgekozen() {
     document.getElementById("time").style.visibility = 'visible';
-    // var help = document.getElementById("date").getAttribute("value"); //! unused var, might be deleted later
     //TODO zorgt ervoor dat een aantal data niet geselecteerd kunnen worden.
     document.getElementById("14.30").setAttribute("disabled", true);
     document.getElementById("15.30").setAttribute("disabled", true);
@@ -110,8 +108,6 @@ function ready() { //TODO maakt extra tekst zichtbaar zodra de gebruiker klaar i
     var datum = document.getElementById("date").value;
     var tijd = document.getElementById("time").value;
     var datumstrng = datum.toString();
-    // document.getElementById("p1").style.display = 'inline';
-    // document.getElementById("p2").style.display = 'inline';
     document.getElementById('info').style.display = 'block';
     document.getElementById("stoelen").style.display = 'inline';
     document.getElementById("p1").innerHTML = "De geselecteerde datum is: " + "</br>" + (datumstrng + " om " + tijd + " uur.").bold();
@@ -133,28 +129,24 @@ var submitBtn = document.getElementById('submitBtn');
 function stoelGekozen() {
     if (bert.checked) {
         bert2.src = '/images/stoel_bezet.png';
-        console.log("Bert");
     } else {
         bert2.src = '/images/stoel_vrij.png';
     }
 
     if (ernie.checked) {
         ernie2.src = '/images/stoel_bezet.png';
-        console.log("Ernie");
     } else {
         ernie2.src = '/images/stoel_vrij.png';
     }
 
     if (samson.checked) {
         samson2.src = '/images/stoel_bezet.png';
-        console.log("Samson");
     } else {
         samson2.src = '/images/stoel_vrij.png';
     }
 
     if (gert.checked) {
         gert2.src = '/images/stoel_bezet.png';
-        console.log("Gert");
     } else {
         gert2.src = '/images/stoel_vrij.png';
     }
@@ -162,21 +154,21 @@ function stoelGekozen() {
     window.scrollBy(0, 300);
 }
 
+//! Deprecated functions
+// var header = document.getElementById("header");
+// header.style.top = "-50px";
 
-var header = document.getElementById("header");
-header.style.top = "-50px";
+// function notDoneYet() {
+//     header.style.display = "block";
+//     header.style.top = "0";
+//     setTimeout(justKidding, 7000);
+// }
 
-function notDoneYet() {
-    header.style.display = "block";
-    header.style.top = "0";
-    setTimeout(justKidding, 7000);
-}
+// function justKidding() {
+//     header.innerHTML = "Not Really...";
+//     setTimeout(goUp, 2500);
+// }
 
-function justKidding() {
-    header.innerHTML = "Not Really...";
-    setTimeout(goUp, 2500);
-}
-
-function goUp() {
-    header.style.top = "-50px";
-}
+// function goUp() {
+//     header.style.top = "-50px";
+// }
