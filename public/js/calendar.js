@@ -95,7 +95,7 @@ document.getElementById("date").setAttribute("value", today); //TODO zet de waar
 document.getElementById("date").setAttribute("max", maxReservation); //TODO zet de maximale waarde die je kunt invullen op 2 maanden verder
 
 function datumGekozen() {
-    document.getElementById("time").style.visibility = 'visible';
+    document.getElementById("time").style.display = 'inline';
     //TODO zorgt ervoor dat een aantal data niet geselecteerd kunnen worden.
     document.getElementById("14.30").setAttribute("disabled", true);
     document.getElementById("15.30").setAttribute("disabled", true);

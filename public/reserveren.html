@@ -19,7 +19,7 @@
     </form>
     <form method="POST" action="/api/reserveren">
         <input type="date" id="date" class="unstyled" oninput="datumGekozen()" name="date">
-        <select style="visibility: hidden" id="time" oninput="tijdGekozen()" name="time">
+        <select style="display: none" id="time" oninput="tijdGekozen()" name="time">
             <option value="9:00" id="9">9:00</option>
             <option value="9:30" id="9.30">9:30</option>
 
@@ -90,9 +90,10 @@
             <div id="submitBtn" style="display: none;">
                 <input type="submit" class="submitBtn">
             </div>
+        </div>
     </form>
-    <!-- <button onclick="notDoneYet()">Reserveren</button> --> <!--! Deprecated button-->
-    </div>
+    <!--! Deprecated button-->
+    <!-- <button onclick="notDoneYet()">Reserveren</button> -->
 </body>
 <script src="js/calendar.js"></script>
 
