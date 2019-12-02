@@ -94,7 +94,7 @@ document.getElementById("date").setAttribute("min", tomorrow); //TODO zorgt ervo
 document.getElementById("date").setAttribute("value", today); //TODO zet de waarde van de input op vandaag
 document.getElementById("date").setAttribute("max", maxReservation); //TODO zet de maximale waarde die je kunt invullen op 2 maanden verder
 
-function datumgekozen() {
+function datumGekozen() {
     document.getElementById("time").style.visibility = 'visible';
     //TODO zorgt ervoor dat een aantal data niet geselecteerd kunnen worden.
     document.getElementById("14.30").setAttribute("disabled", true);
@@ -104,7 +104,7 @@ function datumgekozen() {
     document.getElementById("10").setAttribute("disabled", true);
 }
 
-function ready() { //TODO maakt extra tekst zichtbaar zodra de gebruiker klaar is met een datum en tijd selecteren.
+function tijdGekozen() { //TODO maakt extra tekst zichtbaar zodra de gebruiker klaar is met een datum en tijd selecteren.
     var datum = document.getElementById("date").value;
     var tijd = document.getElementById("time").value;
     var datumstrng = datum.toString();
