@@ -6,10 +6,10 @@ var extraInfo = document.getElementById("footer");
 function hide() {
     extraInfo.style.bottom = 0;
     console.log("hello");
-    setTimeout(goUp, 5000);
+    setTimeout(goDown, 5000);
 }
 
-function goUp(){
+function goDown(){
     extraInfo.style.bottom = "-50px";
 }
 
