@@ -29,7 +29,9 @@ body {
 
 h1 {
     text-align: center;
-    margin-top: 13px;
+    color: #1DB954;
+    border-bottom: 3px double white;
+    padding-bottom: 5px;
 }
 
 p {
