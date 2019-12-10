@@ -87,19 +87,19 @@ var p2 = document.getElementById("p2");
 var p3 = document.getElementById("p3");
 var kapper = document.getElementById("img");
 
-if(chair == "Bert"){
+if (chair == "Bert") {
     kapper.src = "/images/bert.jpg";
 }
 
-if(chair == "Ernie"){
+if (chair == "Ernie") {
     kapper.src = "/images/ernie.jpg";
 }
 
-if(chair == "Samson"){
+if (chair == "Samson") {
     kapper.src = "/images/samson.jpg";
 }
 
-if(chair == "Gert"){
+if (chair == "Gert") {
     kapper.src = "/images/gert.jpeg";
 }
 

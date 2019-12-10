@@ -38,7 +38,7 @@ router.post('/voltooid.html', (req, res) => {
         chair: req.body.radio,
     });
 
-    res.redirect('voltooid.html?date='+req.body.date+'&time='+req.body.time+'&chair='+req.body.radio);
+    res.redirect('voltooid.html?date=' + req.body.date + '&time=' + req.body.time + '&chair=' + req.body.radio);
 })
 
 router.get('/api/getdb/:date:time:chair', (req, res) => {
