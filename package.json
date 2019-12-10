@@ -3,7 +3,8 @@
   "description": "De web applicatie voor Semester 1 - Open ICT, kappers project",
   "main": "App.js",
   "scripts": {
-    "start": "node App.js"
+    "start": "node App.js",
+    "dev": "nodemon"
   },
   "repository": {
     "type": "git",
@@ -19,12 +20,20 @@
   "bugs": {
     "url": "https://github.com/TimVerkleij/WebApp/issues"
   },
+  "nodemonConfig": {
+    "ignore": [
+      "test/*",
+      "docs/*"
+    ],
+    "exec": "npm run start"
+  },
   "homepage": "https://github.com/TimVerkleij/WebApp#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.4",
     "express": "^5.0.0-alpha.7",
     "morgan": "^1.9.1",
+    "nodemon": "^2.0.1",
     "nosql": "^6.1.0"
   }
 }
