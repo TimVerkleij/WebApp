@@ -2,6 +2,15 @@
     .return {
         right: 5px;
     }
+    .barber {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .barber {
+        width: 20%;
+    }
 }
 
 body {
@@ -127,5 +136,4 @@ footer {
 
 .barber {
     object-fit: cover;
-    width: 100%;
 }
