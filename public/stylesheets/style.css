@@ -3,13 +3,20 @@
         right: 5px;
     }
     .barber {
-        width: 100%;
+        width: 60%;
+    }
+    .bevestiging{
+        font-size: 17px;
+        text-align: center;
     }
 }
 
 @media only screen and (min-width: 600px) {
     .barber {
         width: 20%;
+    }
+    .bevestiging{
+        font-size: 24px;
     }
 }
 
