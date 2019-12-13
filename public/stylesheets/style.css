@@ -100,11 +100,11 @@ footer {
     text-align: center;
     font-weight: bold;
     position: fixed;
-    bottom: -50px;
+    bottom: -100px;
     width: 110%;
     transition: bottom 0.5s;
     z-index: 2;
-    left: -10px;
+    left: -5px;
 }
 
 #image2 {
@@ -115,6 +115,7 @@ footer {
 .extra {
     font-size: 12px;
     text-align: center;
+    width: 90%;
 }
 
 .return {
