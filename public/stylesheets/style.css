@@ -18,6 +18,9 @@
     .bevestiging{
         font-size: 24px;
     }
+    .return {
+        left: 5px;
+    }
 }
 
 body {
@@ -30,6 +33,14 @@ h1 {
     color: #1DB954;
     border-bottom: 3px double white;
     padding-bottom: 5px;
+}
+
+.title{
+    text-align: center;
+    color: #1DB954;
+    border-bottom: 3px double white;
+    padding-bottom: 5px;
+    margin-top: 60px;
 }
 
 h2 {
@@ -128,7 +139,15 @@ footer {
     border: 0px;
     background-color: transparent;
     box-shadow: none;
-    cursor: pointer;
+}
+
+.returnBackground{
+    width: 110%;
+    height: 60px;
+    top: -5px;
+    background-color: rgb(0, 9, 58);
+    position: fixed;
+    left: -3px;
 }
 
 .return:hover {

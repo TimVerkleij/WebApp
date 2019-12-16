@@ -11,12 +11,14 @@
 </head>
 
 <body>
+    <div class="returnBackground">
+        <a href="index.html">
+            <button class="return"></button>
+        </a>
+    </div>
     <header id="header">Reservering Voltooid.</header>
-    <h1>Reserveren</h1>
+    <h1 class="title">Reserveren</h1>
     <p>Kies hieronder een datum voor uw afspraak.<br> Het is niet mogelijk om een afspraak voor vandaag te plannen.</p>
-    <a href="index.html">
-        <button class="return"></button>
-    </a>
     <form method="POST" action="/voltooid.html">
         <input type="date" id="date" class="unstyled" oninput="datumGekozen()" name="date">
         <select style="display: none" id="time" oninput="tijdGekozen()" name="time">
