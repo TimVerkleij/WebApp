@@ -103,8 +103,8 @@ if (chair == "Gert") {
     kapper.src = "/images/gert.jpeg";
 }
 
-p1.innerHTML = "Uw gekozen datum is: " + datum;
-p2.innerHTML = "Uw gekozen tijd is: " + time + " uur";
-p3.innerHTML = "Uw gekozen kapper is " + chair;
+p1.innerHTML = "Uw gekozen datum is: " + datum + "<br>" + "Uw gekozen tijd is: " + time + " uur" + "<br>" + "Uw gekozen kapper is " + chair;
+// p2.innerHTML = "Uw gekozen tijd is: " + time + " uur";
+// p3.innerHTML = "Uw gekozen kapper is " + chair;
 
-fetch('/api/getdb/' + date + '?' + time + '?' + chair).then(v => v.json()).then(console.log)
+fetch('/api/getdb/' + date + '&' + time + '&' + chair).then(v => v.json()).then(console.log)
