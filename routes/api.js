@@ -41,12 +41,12 @@ router.post('/voltooid.html', (req, res) => {
     res.redirect('voltooid.html?date=' + req.body.date + '&time=' + req.body.time + '&chair=' + req.body.radio);
 })
 
-router.get('/api/getdb/:date:time:chair', (req, res) => {
+router.get('/api/getdb/:date&:time&:chair', (req, res) => {
     var date = req.params.date;
     var time = req.params.time;
     var chair = req.params.chair;
     console.log(date, time, chair);
-    res.json({ foo: 'bar' })
+    res.json({ date, time, chair})
 })
 
 
