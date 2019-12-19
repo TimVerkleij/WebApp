@@ -21,10 +21,19 @@ function dateChange() {
             var samson2 = document.getElementById('imgC');
             var gert2 = document.getElementById('imgD');
 
-            var boolBert;
-            var boolErnie;
-            var boolSamson;
-            var boolGert;
+            bert.disabled = false;
+            ernie.disabled = false;
+            samson.disabled = false;
+            gert.disabled = false;
+            bert2.src = '/images/stoel_vrij.png';
+            ernie2.src = '/images/stoel_vrij.png';
+            samson2.src = '/images/stoel_vrij.png';
+            gert2.src = '/images/stoel_vrij.png';
+
+            var boolBert = false;
+            var boolErnie = false;
+            var boolSamson = false;
+            var boolGert = false;
 
             var timeStamps = [];
             var count = 0;
@@ -36,22 +45,6 @@ function dateChange() {
                 if (value.date == datum) {
                     timeStamps.push(value.time);
                     timeStamps.sort();
-                    timeStamps.forEach(checkTime);
-
-                    function checkTime(value, index, array) {
-                        var length = array.length;
-                        var nextIndex = index + 1;
-                        if(length > nextIndex){
-                            if(value == timeStamps[nextIndex]){
-                                count = count + 1;
-                                if(count == 3){
-                                    var bla = document.getElementById(value);
-                                    bla.disabled = true;
-                                }
-                            }
-                        }
-                    }
-
                     if (value.time == tijd) {
                         if (value.chair == "Bert") {
                             console.log("Bert")
@@ -60,8 +53,9 @@ function dateChange() {
                             boolBert = true;
                         }
                         if (value.chair == "Ernie") {
-                            console.log("ernie")
+                            console.log("ernie wtf")
                             ernie.setAttribute("disabled", true);
+                            console.log("why not")
                             ernie2.src = '/images/stoel_bezet.png';
                             boolErnie = true;
                         }
@@ -80,28 +74,28 @@ function dateChange() {
                         if (boolBert && boolErnie && boolSamson && boolGert) {
                             document.getElementById(value.time).setAttribute("disabled", true);
                         }
-                    } else {
-                        bert.disabled = false;
-                        ernie.disabled = false;
-                        samson.disabled = false;
-                        gert.disabled = false;
-                        bert2.src = '/images/stoel_vrij.png';
-                        ernie2.src = '/images/stoel_vrij.png';
-                        samson2.src = '/images/stoel_vrij.png';
-                        gert2.src = '/images/stoel_vrij.png';
                     }
-                } else {
-                    bert.disabled = false;
-                    ernie.disabled = false;
-                    samson.disabled = false;
-                    gert.disabled = false;
-                    bert2.src = '/images/stoel_vrij.png';
-                    ernie2.src = '/images/stoel_vrij.png';
-                    samson2.src = '/images/stoel_vrij.png';
-                    gert2.src = '/images/stoel_vrij.png';
                 }
             }
+            timeStamps.forEach(checkTime);
 
+            function checkTime(value, index, array) {
+                var length = array.length;
+                var nextIndex = index + 1;
+                if(length > nextIndex){
+                    if(value == timeStamps[nextIndex]){
+                        console.log(value, timeStamps[nextIndex])
+                        count = count + 1;
+                        console.log(count);
+                        if(count == 3){
+                            var fullTime = document.getElementById(value);
+                            console.log(value + " hello");
+                            fullTime.disabled = true;
+                            count = 0;
+                        }
+                    }
+                }
+            }
 
         })
         
