@@ -26,11 +26,32 @@ function dateChange() {
             var boolSamson;
             var boolGert;
 
+            var timeStamps = [];
+            var count = 0;
+
             response.forEach(myFunction);
 
             function myFunction(value, index, array) {
-                console.log(value);
+                console.log(value.date + " " +value.time + " " + value.chair);
                 if (value.date == datum) {
+                    timeStamps.push(value.time);
+                    timeStamps.sort();
+                    timeStamps.forEach(checkTime);
+
+                    function checkTime(value, index, array) {
+                        var length = array.length;
+                        var nextIndex = index + 1;
+                        if(length > nextIndex){
+                            if(value == timeStamps[nextIndex]){
+                                count = count + 1;
+                                if(count == 3){
+                                    var bla = document.getElementById(value);
+                                    bla.disabled = true;
+                                }
+                            }
+                        }
+                    }
+
                     if (value.time == tijd) {
                         if (value.chair == "Bert") {
                             console.log("Bert")
@@ -56,7 +77,7 @@ function dateChange() {
                             gert2.src = '/images/stoel_bezet.png';
                             boolGert = true;
                         }
-                        if (boolBert && boolErnie && boolSamson && boolGert){
+                        if (boolBert && boolErnie && boolSamson && boolGert) {
                             document.getElementById(value.time).setAttribute("disabled", true);
                         }
                     } else {
@@ -83,5 +104,6 @@ function dateChange() {
 
 
         })
+        
 }
-console.log("it works");
+
