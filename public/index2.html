@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="stylesheets/index2.css">
+    <script src="js/script.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -11,39 +12,116 @@
 
 <body>
     <div>
-        <form method="POST" action="/api/test" autocomplete="off">
-            <div>
-                <legend>Registreren</legend>
+        <p>Hello World</p>
+        <input type="date">
+        <select id="time" name="time">
+            <option value="9:00" id="9">9:00</option>
+            <option value="9:30" id="9.30">9:30</option>
+
+            <option value="10:00" id="10">10:00</option>
+            <option value="10:30" id="10.30">10:30</option>
+
+            <option value="11:00" id="11">11:00</option>
+            <option value="11:30" id="11.30">11:30</option>
+
+            <option value="12:00" id="12">12:00</option>
+            <option value="12:30" id="12.30">12:30</option>
+
+            <option value="13:00" id="13">13:00</option>
+            <option value="13:30" id="13.30">13:30</option>
+
+            <option value="14:00" id="14">14:00</option>
+            <option value="14:30" id="14.30">14:30</option>
+
+            <option value="15:00" id="15">15:00</option>
+            <option value="15:30" id="15.30">15:30</option>
+
+            <option value="16:00" id="16">16:00</option>
+            <option value="16:30" id="16.30">16:30</option>
+        </select>
+        <div id="stoelen">
+            <table>
+                <tr>
+                    <td>
+                        <label>
+                            <input id="bert" type="radio" name="radio" value="Bert">
+                            <img src="/images/stoel_vrij.png" id="imgA" class="stoel">
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input id="ernie" type="radio" name="radio" value="Ernie">
+                            <img src="/images/stoel_vrij.png" id="imgB" class="stoel">
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input id="samson" type="radio" name="radio" value="Samson">
+                            <img src="/images/stoel_vrij.png" id="imgC" class="stoel">
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input id="gert" type="radio" name="radio" value="Gert">
+                            <img src="/images/stoel_vrij.png" id="imgD" class="stoel">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Bert</label></td>
+                    <td><label>Ernie</label></td>
+                    <td><label>Samson</label></td>
+                    <td><label>Gert</label></td>
+                </tr>
+            </table>
+            <div id="submitBtn">
+                <input type="submit" class="submitBtn" value="Reserveren">
             </div>
-            <div>
-                <label>Voornaam</label>
-                <div>
-                    <input type="text" name="name" required>
-                </div>
-            </div>
-            <div>
-                <label>Achternaam</label>
-                <div>
-                    <input type="text" name="lastName" required>
-                </div>
-            </div>
-            <div>
-                <label>E-mail</label>
-                <div>
-                    <input type="email" name="email" required>
-                </div>
-            </div>
-            <div>
-                <label>Wachtwoord</label>
-                <div>
-                    <input type="password" name="password" required>
-                </div>
-            </div>
-            <div>
-                <input type="submit">
-            </div>
-        </form>
+        </div>
     </div>
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+<!-- ! <form method="POST" action="/api/test" autocomplete="off">
+    <div>
+        <legend>Registreren</legend>
+    </div>
+    <div>
+        <label>Voornaam</label>
+        <div>
+            <input type="text" name="name" required>
+        </div>
+    </div>
+    <div>
+        <label>Achternaam</label>
+        <div>
+            <input type="text" name="lastName" required>
+        </div>
+    </div>
+    <div>
+        <label>E-mail</label>
+        <div>
+            <input type="email" name="email" required>
+        </div>
+    </div>
+    <div>
+        <label>Wachtwoord</label>
+        <div>
+            <input type="password" name="password" required>
+        </div>
+    </div>
+    <div>
+        <input type="submit">
+    </div>
+</form> -->
