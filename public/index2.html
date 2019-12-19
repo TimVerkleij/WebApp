@@ -3,7 +3,7 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="stylesheets/index2.css">
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -13,8 +13,8 @@
 <body>
     <div>
         <p>Hello World</p>
-        <input type="date">
-        <select id="time" name="time">
+        <input type="date" onchange="dateChange()" id="datum">
+        <select id="time" name="time" onchange="dateChange()">
             <option value="9:00" id="9">9:00</option>
             <option value="9:30" id="9.30">9:30</option>
 
@@ -74,11 +74,10 @@
                     <td><label>Gert</label></td>
                 </tr>
             </table>
-            <div id="submitBtn">
-                <input type="submit" class="submitBtn" value="Reserveren">
-            </div>
         </div>
     </div>
+
+
 </body>
 
 </html>

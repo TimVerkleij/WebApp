@@ -20,8 +20,8 @@
     <h1 class="title">Reserveren</h1>
     <p>Kies hieronder een datum voor uw afspraak.<br> Het is niet mogelijk om een afspraak voor vandaag te plannen.</p>
     <form method="POST" action="/voltooid.html">
-        <input type="date" id="date" class="unstyled" oninput="datumGekozen()" name="date">
-        <select style="display: none" id="time" oninput="tijdGekozen()" name="time">
+        <input type="date" id="date" class="unstyled" oninput="datumGekozen()" onchange="dateChange()" name="date">
+        <select style="display: none" id="time" oninput="tijdGekozen()" onchange="dateChange()"name="time">
             <option value="9:00" id="9">9:00</option>
             <option value="9:30" id="9.30">9:30</option>
 
@@ -98,5 +98,6 @@
     <!-- <button onclick="notDoneYet()">Reserveren</button> -->
 </body>
 <script src="js/calendar.js"></script>
+<script src="js/script.js"></script>
 
 </html>
