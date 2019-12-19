@@ -96,12 +96,6 @@ document.getElementById("date").setAttribute("max", maxReservation); //TODO zet 
 
 function datumGekozen() {
     document.getElementById("time").style.display = 'inline';
-    //TODO zorgt ervoor dat een aantal data niet geselecteerd kunnen worden.
-    document.getElementById("14.30").setAttribute("disabled", true);
-    document.getElementById("15.30").setAttribute("disabled", true);
-    document.getElementById("12").setAttribute("disabled", true);
-    document.getElementById("9").setAttribute("disabled", true);
-    document.getElementById("10").setAttribute("disabled", true);
 }
 
 function tijdGekozen() { //TODO maakt extra tekst zichtbaar zodra de gebruiker klaar is met een datum en tijd selecteren.
