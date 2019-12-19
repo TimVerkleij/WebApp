@@ -128,25 +128,25 @@ var submitBtn = document.getElementById('submitBtn');
 
 function stoelGekozen() {
     if (bert.checked) {
-        bert2.src = '/images/stoel_bezet.png';
+        bert2.src = '/images/stoel_gereserveerd.png';
     } else {
         bert2.src = '/images/stoel_vrij.png';
     }
 
     if (ernie.checked) {
-        ernie2.src = '/images/stoel_bezet.png';
+        ernie2.src = '/images/stoel_gereserveerd.png';
     } else {
         ernie2.src = '/images/stoel_vrij.png';
     }
 
     if (samson.checked) {
-        samson2.src = '/images/stoel_bezet.png';
+        samson2.src = '/images/stoel_gereserveerd.png';
     } else {
         samson2.src = '/images/stoel_vrij.png';
     }
 
     if (gert.checked) {
-        gert2.src = '/images/stoel_bezet.png';
+        gert2.src = '/images/stoel_gereserveerd.png';
     } else {
         gert2.src = '/images/stoel_vrij.png';
     }
