@@ -30,30 +30,42 @@ function dateChange() {
                         if (value.chair == "Bert") {
                             console.log("Bert")
                             bert.setAttribute("disabled", true);
+                            bert2.src = '/images/stoel_bezet.png';
                         }
                         if (value.chair == "Ernie") {
                             console.log("ernie")
                             ernie.setAttribute("disabled", true);
+                            ernie2.src = '/images/stoel_bezet.png';
                         }
                         if (value.chair == "Samson") {
                             console.log("samson")
                             samson.setAttribute("disabled", true);
+                            samson2.src = '/images/stoel_bezet.png';
                         }
                         if (value.chair == "Gert") {
                             console.log("gert")
                             gert.setAttribute("disabled", true);
+                            gert2.src = '/images/stoel_bezet.png';
                         }
                     } else {
                         bert.disabled = false;
                         ernie.disabled = false;
                         samson.disabled = false;
                         gert.disabled = false;
+                        bert2.src = '/images/stoel_vrij.png';
+                        ernie2.src = '/images/stoel_vrij.png';
+                        samson2.src = '/images/stoel_vrij.png';
+                        gert2.src = '/images/stoel_vrij.png';
                     }
                 } else {
                     bert.disabled = false;
                     ernie.disabled = false;
                     samson.disabled = false;
                     gert.disabled = false;
+                    bert2.src = '/images/stoel_vrij.png';
+                    ernie2.src = '/images/stoel_vrij.png';
+                    samson2.src = '/images/stoel_vrij.png';
+                    gert2.src = '/images/stoel_vrij.png';
                 }
             }
 

@@ -150,6 +150,20 @@ function stoelGekozen() {
     } else {
         gert2.src = '/images/stoel_vrij.png';
     }
+
+    if(bert.disabled) {
+        bert2.src = '/images/stoel_bezet.png';
+    }
+    if(ernie.disabled) {
+        ernie2.src = '/images/stoel_bezet.png';
+    }
+    if(samson.disabled) {
+        samson2.src = '/images/stoel_bezet.png';
+    }
+    if(gert.disabled) {
+        gert2.src = '/images/stoel_bezet.png';
+    }
+
     submitBtn.style.display = "inline";
     window.scrollBy(0, 300);
 }
