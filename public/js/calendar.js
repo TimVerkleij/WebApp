@@ -9,11 +9,13 @@ var today = new Date();
 var tomorrow = new Date();
 var dd = today.getDate();
 var dd2 = today.getDate() + 1;
+var dd3 = today.getDate();
 var mm = today.getMonth() + 1; //! January is 0!
 var mm2 = today.getMonth() + 1;
 var mm3 = today.getMonth() + 3;
 var yyyy = today.getFullYear();
 var yyyy2 = today.getFullYear();
+var yyyy3 = today.getFullYear();
 
 // TODO zorgt ervoor dat er bij de dagen 1 tot en met 9 een 0 staat voor het getal. 9 april 2019 wordt
 // TODO  bijvoorbeeld 09-04-2019
@@ -40,6 +42,9 @@ if (yyyy % 4 == 0 && mm2 == 2 && dd == 29) {
 } else {
     if (mm2 == 1 || mm2 == 3 || mm2 == 5 || mm2 == 7 || mm2 == 8 || mm2 == 10 || mm2 == 12) {
         if (dd == 31) {
+            if (dd == 31 && mm2 == 12) {
+                yyyy2 = yyyy2 + 1;
+            }
             dd2 = '0' + 1;
             if (mm >= 10) {
                 mm2 = mm2 + 1;
@@ -50,6 +55,9 @@ if (yyyy % 4 == 0 && mm2 == 2 && dd == 29) {
                 if (mm2 < 10) {
                     mm2 = '0' + mm2;
                 }
+            }
+            if (mm2 == 13) {
+                mm2 = '0' + 1;
             }
         }
     }
@@ -75,21 +83,26 @@ if (yyyy % 4 == 0 && mm2 == 2 && dd == 29) {
 
 if (mm == 11) {
     mm3 = '0' + 1;
-    yyyy2 = yyyy + 1;
+    yyyy3 = yyyy + 1;
 }
 if (mm == 12) {
-    mm3 = '0' + 2;
-    yyyy2 = yyyy + 1;
+    mm3 = '0' + 3;
+    yyyy3 = yyyy + 1;
 }
 if (mm == 13) {
     mm3 = '0' + 3;
-    yyyy2 = yyyy + 1;
+    yyyy3 = yyyy + 1;
 }
 
-today = yyyy + '-' + mm + '-' + dd;
-tomorrow = yyyy + '-' + mm2 + '-' + dd2;
+if (dd > 28) {
+    dd3 = '0' + 1;
+}
 
-maxReservation = yyyy2 + '-' + mm3 + '-' + dd;
+
+today = yyyy + '-' + mm + '-' + dd;
+tomorrow = yyyy2 + '-' + mm2 + '-' + dd2;
+
+maxReservation = yyyy3 + '-' + mm3 + '-' + dd3;
 document.getElementById("date").setAttribute("min", tomorrow); //TODO zorgt ervoor dat je alleen een datum kan kiezen die later is dan vandaag
 document.getElementById("date").setAttribute("value", today); //TODO zet de waarde van de input op vandaag
 document.getElementById("date").setAttribute("max", maxReservation); //TODO zet de maximale waarde die je kunt invullen op 2 maanden verder
@@ -145,16 +158,16 @@ function stoelGekozen() {
         gert2.src = '/images/stoel_vrij.png';
     }
 
-    if(bert.disabled) {
+    if (bert.disabled) {
         bert2.src = '/images/stoel_bezet.png';
     }
-    if(ernie.disabled) {
+    if (ernie.disabled) {
         ernie2.src = '/images/stoel_bezet.png';
     }
-    if(samson.disabled) {
+    if (samson.disabled) {
         samson2.src = '/images/stoel_bezet.png';
     }
-    if(gert.disabled) {
+    if (gert.disabled) {
         gert2.src = '/images/stoel_bezet.png';
     }
 
