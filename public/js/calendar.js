@@ -98,6 +98,18 @@ if (dd > 28) {
     dd3 = '0' + 1;
 }
 
+if  (mm3 < 10){
+    mm3 = '0' + mm3;
+}
+
+if (mm2 < 10){
+    mm2 = '0' + mm2;
+}
+
+if (dd3 < 10) {
+    dd3 = '0' + dd3;
+}
+
 
 today = yyyy + '-' + mm + '-' + dd;
 tomorrow = yyyy2 + '-' + mm2 + '-' + dd2;
