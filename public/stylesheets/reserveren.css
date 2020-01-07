@@ -5,6 +5,9 @@
     select {
         width: 97%;
     }
+    .icon{
+        width: 10%;
+    }
 }
 
 @media only screen and (min-width: 600px) {
@@ -13,6 +16,10 @@
     }
     select {
         width: 87%;
+    }
+    .icon{
+        width: 40px;
+        height: 40px;
     }
 }
 
@@ -148,8 +155,6 @@ header {
 }
 
 .icon {
-    width: 20px;
-    height: width;
     float: left;
     margin-right: 5px;
 }
