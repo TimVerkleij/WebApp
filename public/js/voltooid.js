@@ -1,10 +1,7 @@
 var url = new URL(window.location.href);
-console.log(url);
 var date = url.searchParams.get("date");
 var time = url.searchParams.get("time");
 var chair = url.searchParams.get("chair");
-
-console.log(date);
 
 var year = date.split("-")[0];
 var month = date.split("-")[1];
@@ -104,7 +101,5 @@ if (chair == "Gert") {
 }
 
 p1.innerHTML = "Uw gekozen datum is: " + datum + "<br>" + "Uw gekozen tijd is: " + time + " uur" + "<br>" + "Uw gekozen kapper is " + chair;
-// p2.innerHTML = "Uw gekozen tijd is: " + time + " uur";
-// p3.innerHTML = "Uw gekozen kapper is " + chair;
 
 fetch('/api/getdb/' + date + '&' + time + '&' + chair).then(v => v.json()).then(console.log)

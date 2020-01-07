@@ -186,22 +186,3 @@ function stoelGekozen() {
     submitBtn.style.display = "inline";
     window.scrollBy(0, 300);
 }
-
-//! Deprecated functions
-// var header = document.getElementById("header");
-// header.style.top = "-50px";
-
-// function notDoneYet() {
-//     header.style.display = "block";
-//     header.style.top = "0";
-//     setTimeout(justKidding, 7000);
-// }
-
-// function justKidding() {
-//     header.innerHTML = "Not Really...";
-//     setTimeout(goUp, 2500);
-// }
-
-// function goUp() {
-//     header.style.top = "-50px";
-// }
