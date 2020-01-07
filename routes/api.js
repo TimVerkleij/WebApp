@@ -51,7 +51,6 @@ router.get('/api/getdb/:date&:time&:chair', (req, res) => {
 
 router.get('/api/getdb2/', (req, res) => {
     db.find().make(function(filter) {
-        // filter.where('chair', '=', 'Ernie');
         filter.callback(function(err, response) {
             res.json({ response })
         });
