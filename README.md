@@ -7,10 +7,10 @@ Served by a normal webserver with PHP included.
 
 The following software is required to launch this site on your own device:
 
-    - Node JS
+    Node JS
 
 After cloning this repository you need to install the node_modules that can be found in the package.json file under "Depenendencies".
 
 To Launch the site you can use the following command:
 
-    - "node .\App.js"
+    "node .\App.js"
