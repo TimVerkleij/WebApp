@@ -8,3 +8,16 @@ input {
     display: block;
     margin: 5px;
 }
+
+.idk {
+    margin-right: -30px;
+}
+
+.left{
+    border-right: solid black 2px;
+}
+
+table{
+    border-collapse: collapse;
+    font-size: 24px;
+}
