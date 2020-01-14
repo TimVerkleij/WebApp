@@ -6,7 +6,6 @@ var selectedDay = document.getElementsByTagName('input')[0];
 
 //TODO maakt variabelen aan voor de dag, maand en jaar.
 var today = new Date();
-var tomorrow = new Date();
 var dd = today.getDate();
 var dd2 = today.getDate() + 1;
 var dd3 = today.getDate();
@@ -98,15 +97,15 @@ if (dd > 28) {
     dd3 = '0' + 1;
 }
 
-if  (mm3 < 10){
+if  (mm3 < 10 && mm3.length !== 2){
     mm3 = '0' + mm3;
 }
 
-if (mm2 < 10){
+if (mm2 < 10 && mm2.length !== 2){
     mm2 = '0' + mm2;
 }
 
-if (dd3 < 10) {
+if (dd3 < 10 && dd3.length !== 2) {
     dd3 = '0' + dd3;
 }
 
