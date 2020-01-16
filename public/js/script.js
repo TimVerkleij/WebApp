@@ -8,6 +8,7 @@ function dateChange() {
 
             var datum = document.getElementById('date').value;
             var tijd = document.getElementById('time').value;
+            var select = document.getElementById('time').options;
 
             var bert = document.getElementById('bert');
             var ernie = document.getElementById('ernie');
@@ -32,6 +33,13 @@ function dateChange() {
             var boolErnie = false;
             var boolSamson = false;
             var boolGert = false;
+
+            var amountOfOptions = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
+            amountOfOptions.forEach(enableTime);
+
+            function enableTime(value, index, array){
+                select[value].disabled = false;
+            }
 
             var timeStamps = [];
             var count = 0;
@@ -74,10 +82,10 @@ function dateChange() {
             function checkTime(value, index, array) {
                 var length = array.length;
                 var nextIndex = index + 1;
-                if(length > nextIndex){
-                    if(value == timeStamps[nextIndex]){
+                if (length > nextIndex) {
+                    if (value == timeStamps[nextIndex]) {
                         count = count + 1;
-                        if(count == 3){
+                        if (count == 3) {
                             var fullTime = document.getElementById(value);
                             fullTime.disabled = true;
                             count = 0;
@@ -87,6 +95,5 @@ function dateChange() {
             }
 
         })
-        
-}
 
+}
