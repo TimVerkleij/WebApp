@@ -28,11 +28,13 @@ router.post('/api/test', (req, res) => {
 
 router.post('/voltooid.html', (req, res) => {
     const newObj = {
+        name: req.body.name,
         date: req.body.date,
         time: req.body.time,
         chair: req.body.radio,
     }
     db.insert({
+        name: req.body.name,
         date: req.body.date,
         time: req.body.time,
         chair: req.body.radio,
