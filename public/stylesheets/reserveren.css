@@ -193,6 +193,10 @@ a {
     -webkit-tap-highlight-color: transparent;
 }
 
+input[type=text]:focus {
+    background-color: #1DB954;
+  }
+
 
 /* width */
 

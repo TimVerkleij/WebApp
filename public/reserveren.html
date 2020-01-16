@@ -20,8 +20,10 @@
     <h1 class="title">Reserveren</h1>
     <p>Kies hieronder een datum voor uw afspraak.<br> Het is niet mogelijk om een afspraak voor vandaag te plannen.</p>
     <form method="POST" action="/voltooid.html">
-        <input type="date" id="date" class="unstyled" oninput="datumGekozen()" onchange="dateChange()" name="date">
-        <select style="display: none" id="time" oninput="tijdGekozen()" onchange="dateChange()"name="time">
+        <input type="text" id="name" name="name" placeholder="Uw Naam" required>
+        <input type="date" id="date" class="unstyled" oninput="datumGekozen()" onchange="dateChange()" name="date" required>
+        <select style="display: none" id="time" oninput="tijdGekozen()" onchange="dateChange()"name="time" required>
+            <option value="Kies een tijd" disabled selected>Kies een tijd</option>
             <option value="9:00" id="9:00">9:00</option>
             <option value="9:30" id="9:30">9:30</option>
 
@@ -62,25 +64,25 @@
                 <tr>
                     <td>
                         <label>
-                            <input id="bert" type="radio" onchange="stoelGekozen()" name="radio" value="Bert">
+                            <input id="bert" type="radio" onchange="stoelGekozen()" name="radio" value="Bert" required>
                             <img src="/images/stoel_vrij.png" id="imgA" class="stoel">
                         </label>
                     </td>
                     <td>
                         <label>
-                            <input id="ernie" type="radio" onchange="stoelGekozen()" name="radio" value="Ernie">
+                            <input id="ernie" type="radio" onchange="stoelGekozen()" name="radio" value="Ernie" required>
                             <img src="/images/stoel_vrij.png" id="imgB" class="stoel">
                         </label>
                     </td>
                     <td>
                         <label>
-                            <input id="samson" type="radio" onchange="stoelGekozen()" name="radio" value="Samson">
+                            <input id="samson" type="radio" onchange="stoelGekozen()" name="radio" value="Samson" required>
                             <img src="/images/stoel_vrij.png" id="imgC" class="stoel">
                         </label>
                     </td>
                     <td>
                         <label>
-                            <input id="gert" type="radio" onchange="stoelGekozen()" name="radio" value="Gert">
+                            <input id="gert" type="radio" onchange="stoelGekozen()" name="radio" value="Gert" required>
                             <img src="/images/stoel_vrij.png" id="imgD" class="stoel">
                         </label>
                     </td>
