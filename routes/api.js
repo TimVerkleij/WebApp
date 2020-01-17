@@ -59,5 +59,12 @@ router.get('/api/getdb2/', (req, res) => {
     });
 })
 
+router.get('/api/search/', (req, res) => {
+    db.find().make(function(filter) {
+        filter.callback(function(err, response) {
+            res.json({ response })
+        });
+    });
+})
 
 module.exports = router;

@@ -184,3 +184,16 @@ footer {
 .barber {
     object-fit: cover;
 }
+
+.table, tr ,th, td {
+    border: 2px solid white;
+    border-collapse: collapse;
+    padding: 10px;
+    font-size: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table{
+    width: 100%;
+}
