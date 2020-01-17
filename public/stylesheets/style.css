@@ -9,6 +9,9 @@
         font-size: 17px;
         text-align: center;
     }
+    select {
+        width: 97%;
+    }
 }
 
 @media only screen and (min-width: 600px) {
@@ -20,6 +23,9 @@
     }
     .return {
         left: 5px;
+    }
+    select {
+        width: 87%;
     }
 }
 
@@ -81,12 +87,26 @@ input {
     cursor: pointer;
     outline: none;
     color: #fff;
-    background-color: #8c00ff;
+    background-color: #1DB954;
     border: none;
     border-radius: 15px;
-    box-shadow: 0 9px #999;
+    box-shadow: 0 9px rgb(23, 141, 65);
     margin: 7px;
     width: 75%;
+}
+
+select {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #1DB954;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(23, 141, 65);
+    margin: 7px;
 }
 
 button:hover:not(.return) {
