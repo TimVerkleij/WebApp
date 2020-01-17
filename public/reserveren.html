@@ -19,7 +19,7 @@
     <header id="header">Reservering Voltooid.</header>
     <h1 class="title">Reserveren</h1>
     <p>Kies hieronder een datum voor uw afspraak.<br> Het is niet mogelijk om een afspraak voor vandaag te plannen.</p>
-    <form method="POST" action="/voltooid.html">
+    <form method="POST" action="/voltooid.html" autocomplete="off">
         <input type="text" id="name" name="name" placeholder="Uw Naam" required>
         <input type="date" id="date" class="unstyled" oninput="datumGekozen()" onchange="dateChange()" name="date" required>
         <select style="display: none" id="time" oninput="tijdGekozen()" onchange="dateChange()"name="time" required>
