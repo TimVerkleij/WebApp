@@ -59,8 +59,16 @@ router.get('/api/getdb2/', (req, res) => {
     });
 })
 
-router.get('/api/search/', (req, res) => {
+router.post('/api/search/', (req, res) => {
+    var naam = req.body.naam;
+    var datum = req.body.datum;
+    var tijd = req.body.tijd;
+    var kapper = req.body.kapper;
     db.find().make(function(filter) {
+        filter.where('name', '=', naam)
+        filter.where('date', '=', datum)
+        filter.where('time', '=', tijd)
+        filter.where('chair', '=', kapper)
         filter.callback(function(err, response) {
             res.json({ response })
         });

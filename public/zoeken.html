@@ -19,7 +19,7 @@
     <h1 class="title">Zoeken</h1>
     <div>
         <h3>Hieronder kunt u zoeken naar alle afspraken in de database.</h3>
-        <input type="text" placeholder="Naam" id="naam">
+        <input type="text" placeholder="Naam" id="naam" name="naam">
         <input type="date" id="datum">
         <select id="tijd" name="time">
             <option value="Geen tijd gekozen" selected>Geen tijd gekozen</option>
@@ -54,9 +54,8 @@
             <option>Samson</option>
             <option>Gert</option>
         </select>
-        <button onclick="zoeken()">Zoeken</button>
+        <input type="submit" name="" id="" value="Zoeken" onclick="searchDatabase()">
     </div>
-
     <div>
         <p id="resultaat"></p>
     </div>
