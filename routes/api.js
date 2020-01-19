@@ -83,4 +83,17 @@ router.post('/api/search/', (req, res) => {
     });
 })
 
+router.post('/api/logIn/', (req, res) => {
+    var password = req.body.password;
+
+    if(password === 'kapper'){
+        res.json({ password })
+       
+    }else{
+        console.log('wrong password');
+    }
+
+    
+})
+
 module.exports = router;

@@ -93,4 +93,29 @@ function searchDatabase() {
             generateTableHead(table, data);
             generateTable(table, mountains);
         })
+        setTimeout(scrollDown, 100);
+}
+
+function scrollDown(){
+    window.scrollBy(0, 125);
+}
+
+function logIn() {
+    const wachtwoord = {
+        password: document.getElementById('password').value
+    }
+
+    fetch('/api/logIn/', {
+            method: 'POST', // or 'PUT'
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(wachtwoord),
+        })
+        .then(v => v.json())
+        .then(password => {
+            password = password.password;
+            document.getElementsByTagName('div')[1].style.display = 'none';
+            document.getElementsByTagName('div')[2].style.display = 'block';
+        })
 }
