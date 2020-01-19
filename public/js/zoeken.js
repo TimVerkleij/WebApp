@@ -26,11 +26,12 @@ function searchDatabase() {
     if (tbl) tbl.parentNode.removeChild(tbl);
 
     const data = {
-        naam: document.getElementById('naam').value,
-        datum: document.getElementById('datum').value,
-        tijd: document.getElementById('tijd').value,
-        kapper: document.getElementById('kapper').value
+        naam: naam.value,
+        datum: datum.value,
+        tijd: tijd.value,
+        kapper: kapper.value
     }
+
     fetch('/api/search/', {
             method: 'POST', // or 'PUT'
             headers: {

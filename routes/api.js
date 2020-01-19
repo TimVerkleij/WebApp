@@ -65,10 +65,18 @@ router.post('/api/search/', (req, res) => {
     var tijd = req.body.tijd;
     var kapper = req.body.kapper;
     db.find().make(function(filter) {
-        filter.where('name', '=', naam)
-        filter.where('date', '=', datum)
-        filter.where('time', '=', tijd)
-        filter.where('chair', '=', kapper)
+        if (naam !== '') {
+            filter.where('name', '=', naam)
+        }
+        if (datum !== '') {
+            filter.where('date', '=', datum)
+        }
+        if (tijd !== 'Geen tijd gekozen') {
+            filter.where('time', '=', tijd)
+        }
+        if (kapper !== 'Geen kapper gekozen') {
+            filter.where('chair', '=', kapper)
+        }
         filter.callback(function(err, response) {
             res.json({ response })
         });
