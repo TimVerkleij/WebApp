@@ -25,8 +25,14 @@ function searchDatabase() {
     var tbl = document.getElementsByTagName('thead')[0];
     if (tbl) tbl.parentNode.removeChild(tbl);
 
+    var upperCaseName = naam.value;
+    upperCaseName = upperCaseName.toLowerCase()
+        .split(' ')
+        .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
+        .join(' ');
+
     const data = {
-        naam: naam.value,
+        naam: upperCaseName,
         datum: datum.value,
         tijd: tijd.value,
         kapper: kapper.value
@@ -93,10 +99,10 @@ function searchDatabase() {
             generateTableHead(table, data);
             generateTable(table, mountains);
         })
-        setTimeout(scrollDown, 100);
+    setTimeout(scrollDown, 100);
 }
 
-function scrollDown(){
+function scrollDown() {
     window.scrollBy(0, 125);
 }
 

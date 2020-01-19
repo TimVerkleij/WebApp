@@ -27,14 +27,20 @@ router.post('/api/test', (req, res) => {
 })
 
 router.post('/voltooid.html', (req, res) => {
+    var naam = req.body.name
+    naam = naam.toLowerCase()
+    .split(' ')
+    .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
+    .join(' ');
+    
     const newObj = {
-        name: req.body.name,
+        name: naam,
         date: req.body.date,
         time: req.body.time,
         chair: req.body.radio,
     }
     db.insert({
-        name: req.body.name,
+        name: naam,
         date: req.body.date,
         time: req.body.time,
         chair: req.body.radio,
