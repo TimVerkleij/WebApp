@@ -119,7 +119,7 @@ button:hover:not(.return) {
 
 button:active:not(.return) {
     background-color: rgb(13, 134, 56);
-    box-shadow: 0 5px #666;
+    box-shadow: 0 3px rgb(23, 141, 65);
     transform: translateY(4px);
 }
 
