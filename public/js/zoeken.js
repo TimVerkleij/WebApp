@@ -5,22 +5,6 @@ var kapper = document.getElementById('kapper');
 
 var resultaat = document.getElementById('resultaat');
 
-function zoeken() {
-    if (naam.value == '') {
-        console.log("geen naam");
-    }
-    if (datum.value == '') {
-        console.log('geen datum');
-    }
-    if (tijd.value == 'Geen tijd gekozen') {
-        console.log('Geen tijd gekozenn');
-    }
-    if (kapper.value == 'Geen kapper gekozen') {
-        console.log('Geen kapper gekozenn');
-    }
-    searchDatabase();
-}
-
 function searchDatabase() {
     var tbl = document.getElementsByTagName('thead')[0];
     if (tbl) tbl.parentNode.removeChild(tbl);
@@ -48,28 +32,6 @@ function searchDatabase() {
         .then(v => v.json())
         .then(response => {
             response = response.response;
-
-            response2 = [];
-
-            if (naam.value !== '') {
-                response.forEach(checkNames)
-
-                function checkNames(value) {
-                    if (value.name == naam.value) {
-                        response2.push(value);
-                        resultaten = response2;
-                    }
-                }
-            }
-            if (datum.value !== '') {
-                response2.forEach(checkDates)
-
-                function checkDates(value) {
-                    if (value.date == datum.value) {
-
-                    };
-                }
-            }
 
             let mountains = response
 
