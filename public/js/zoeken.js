@@ -83,7 +83,28 @@ function logIn() {
         .then(v => v.json())
         .then(password => {
             password = password.password;
-            document.getElementsByTagName('div')[1].style.display = 'none';
-            document.getElementsByTagName('div')[2].style.display = 'block';
+
+            var incorrect = document.getElementById('incorrect');
+
+            if(password == 'Correct password'){
+                document.getElementsByTagName('div')[1].style.display = 'none';
+                document.getElementsByTagName('div')[2].style.display = 'block';
+            }else{
+                incorrect.style.visibility = 'visible'
+                setTimeout(function(){
+                    incorrect.style.color = 'red';
+                    console.log('yup')
+                    setTimeout(function(){
+                        incorrect.style.color = 'lime';
+                        console.log('yup')
+                    }, 2000);
+                }, 2000);
+               
+                
+                console.log('nope')
+                
+
+            }
+            
         })
 }

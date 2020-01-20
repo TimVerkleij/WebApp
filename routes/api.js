@@ -29,10 +29,10 @@ router.post('/api/test', (req, res) => {
 router.post('/voltooid.html', (req, res) => {
     var naam = req.body.name
     naam = naam.toLowerCase()
-    .split(' ')
-    .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
-    .join(' ');
-    
+        .split(' ')
+        .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
+        .join(' ');
+
     const newObj = {
         name: naam,
         date: req.body.date,
@@ -92,14 +92,16 @@ router.post('/api/search/', (req, res) => {
 router.post('/api/logIn/', (req, res) => {
     var password = req.body.password;
 
-    if(password === 'kapper'){
+    if (password === 'kapper') {
+        password = 'Correct password';
         res.json({ password })
-       
-    }else{
-        console.log('wrong password');
+
+    } else {
+        password = 'Wrong password';
+        res.json({ password })
     }
 
-    
+
 })
 
 module.exports = router;

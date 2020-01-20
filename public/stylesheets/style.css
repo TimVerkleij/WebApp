@@ -5,7 +5,7 @@
     .barber {
         width: 60%;
     }
-    .bevestiging{
+    .bevestiging {
         font-size: 17px;
         text-align: center;
     }
@@ -18,7 +18,7 @@
     .barber {
         width: 20%;
     }
-    .bevestiging{
+    .bevestiging {
         font-size: 24px;
     }
     .return {
@@ -29,7 +29,7 @@
     }
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -45,7 +45,7 @@ h1 {
     padding-bottom: 5px;
 }
 
-.title{
+.title {
     text-align: center;
     color: #1DB954;
     border-bottom: 3px double white;
@@ -97,6 +97,16 @@ input {
     box-shadow: 0 9px rgb(23, 141, 65);
     margin: 7px;
     width: 75%;
+}
+
+input:active:not(.wachtwoord) {
+    background-color: rgb(13, 134, 56);
+    box-shadow: 0 3px rgb(23, 141, 65);
+    transform: translateY(4px);
+}
+
+input:hover {
+    background-color: rgb(10, 150, 59)
 }
 
 select {
@@ -165,7 +175,7 @@ footer {
     box-shadow: none;
 }
 
-.returnBackground{
+.returnBackground {
     width: 110%;
     height: 60px;
     top: -5px;
@@ -189,7 +199,10 @@ footer {
     object-fit: cover;
 }
 
-.table, tr ,th, td {
+.table,
+tr,
+th,
+td {
     border: 2px solid white;
     border-collapse: collapse;
     padding: 10px;
@@ -198,15 +211,15 @@ footer {
     margin-right: auto;
 }
 
-.table{
+.table {
     width: 100%;
 }
 
-.locked{
+.locked {
     display: none;
 }
 
-.password{
+.password {
     margin: 0;
     position: absolute;
     top: 50%;
@@ -215,6 +228,16 @@ footer {
     transform: translate(-50%, -50%);
 }
 
+.incorrect {
+    visibility: hidden;
+    color: lime;
+    font-weight: bolder;
+    text-align: center;
+    -webkit-transition: color 1s ease;
+    -moz-transition: color 1s ease;
+    -o-transition: color 1s ease;
+    transition: color 1s ease;
+}
 
 
 /* width */
