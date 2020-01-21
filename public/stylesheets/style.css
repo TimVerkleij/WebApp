@@ -68,7 +68,7 @@ a {
     color: white;
 }
 
-button:not(.return) {
+button:not(.return):not(.floating):not(.notFloating) {
     padding: 15px 25px;
     font-size: 24px;
     text-align: center;
@@ -237,6 +237,43 @@ td {
     -moz-transition: color 0.5s ease;
     -o-transition: color 0.5s ease;
     transition: color 0.5s ease;
+}
+
+.floating{
+    position: fixed;
+    right: 5px;
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #1DB954;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(23, 141, 65);
+    margin: 7px;
+    bottom: 10px;
+    transition: transform .2s ease-in-out;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.notFloating{
+    position: fixed;
+    right: -500px;
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #1DB954;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(23, 141, 65);
+    margin: 7px;
+    transition: transform .2s ease-in-out;
+    transform: translate3d(-50px, -50px, -50px);
 }
 
 #resultaat{
