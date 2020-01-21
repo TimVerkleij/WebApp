@@ -33,6 +33,8 @@ function searchDatabase() {
         .then(response => {
             response = response.response;
 
+            resultaat.innerHTML = "Er zijn " + response.length + " afspraken gevonden:"
+
             let mountains = response
 
             function generateTableHead(table, data) {
@@ -60,6 +62,7 @@ function searchDatabase() {
             let data = Object.keys(mountains[0]);
             generateTableHead(table, data);
             generateTable(table, mountains);
+            resultaat.style.display = 'block';
         })
     setTimeout(scrollDown, 100);
 }

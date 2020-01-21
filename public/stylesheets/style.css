@@ -239,6 +239,10 @@ td {
     transition: color 0.5s ease;
 }
 
+#resultaat{
+    display: none;
+}
+
 
 /* width */
 
