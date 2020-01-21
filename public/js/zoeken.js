@@ -68,6 +68,14 @@ function scrollDown() {
     window.scrollBy(0, 125);
 }
 
+var passwordField = document.getElementById("password");
+passwordField.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("logIn").click();
+    }
+});
+
 function logIn() {
     const wachtwoord = {
         password: document.getElementById('password').value
@@ -86,25 +94,18 @@ function logIn() {
 
             var incorrect = document.getElementById('incorrect');
 
-            if(password == 'Correct password'){
+            if (password == 'Correct password') {
                 document.getElementsByTagName('div')[1].style.display = 'none';
                 document.getElementsByTagName('div')[2].style.display = 'block';
-            }else{
+            } else {
                 incorrect.style.visibility = 'visible'
-                setTimeout(function(){
+                setTimeout(function() {
                     incorrect.style.color = 'red';
-                    console.log('yup')
-                    setTimeout(function(){
+                    setTimeout(function() {
                         incorrect.style.color = 'lime';
-                        console.log('yup')
-                    }, 2000);
-                }, 2000);
-               
-                
-                console.log('nope')
-                
-
+                    }, 500);
+                }, 100);
             }
-            
+
         })
 }
