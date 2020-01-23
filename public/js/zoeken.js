@@ -5,6 +5,8 @@ var kapper = document.getElementById('kapper');
 
 var resultaat = document.getElementById('resultaat');
 
+var wrongGuesses = 0;
+
 function searchDatabase() {
     var tbl = document.getElementsByTagName('thead')[0];
     if (tbl) tbl.parentNode.removeChild(tbl);
@@ -113,6 +115,14 @@ function logIn() {
                         incorrect.style.color = 'lime';
                     }, 500);
                 }, 100);
+                wrongGuesses++;
+                if (wrongGuesses >= 3) {
+                    var antwoord = prompt("Het wachtwoord is 'kapper' ")
+                    if (antwoord === "kapper") {
+                        document.getElementsByTagName('div')[1].style.display = 'none';
+                        document.getElementsByTagName('div')[2].style.display = 'block';
+                    }
+                }
             }
 
         })
