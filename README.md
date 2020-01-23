@@ -17,3 +17,7 @@ After cloning this repository you need to install the node_modules that can be f
 To Launch the site you can use the following command:
 
     "node .\App.js"
+
+In order to use nodemon you can run the following command in stead of "node .\App.js":
+
+    "npm run dev"
