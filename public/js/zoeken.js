@@ -23,7 +23,7 @@ function searchDatabase() {
     }
 
     fetch('/api/search/', {
-            method: 'POST', // or 'PUT'
+            method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
@@ -85,7 +85,7 @@ function logIn() {
     }
 
     fetch('/api/logIn/', {
-            method: 'POST', // or 'PUT'
+            method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },

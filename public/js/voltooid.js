@@ -102,4 +102,4 @@ if (chair == "Gert") {
 
 p1.innerHTML = "Uw gekozen datum is: " + datum + "<br>" + "Uw gekozen tijd is: " + time + " uur" + "<br>" + "Uw gekozen kapper is " + chair;
 
-fetch('/api/getdb/' + date + '&' + time + '&' + chair).then(v => v.json()).then(console.log)
+fetch('/api/getdb/' + date + '&' + time + '&' + chair).then(v => v.json()).then()

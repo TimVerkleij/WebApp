@@ -1,10 +1,6 @@
 //!  JavaScript functions for reserveren.html
 
-//TODO maakt variabelen aan om te achterhalen welke dag het is.
-var selectedDate = document.getElementsByTagName('input')[0];
-var selectedDay = document.getElementsByTagName('input')[0];
-
-//TODO maakt variabelen aan voor de dag, maand en jaar.
+//TODO maakt variabelen aan voor vandaag, morgen en een datum 2 maanden later.
 
 let today = moment(new Date()).format('YYYY-MM-DD');
 
