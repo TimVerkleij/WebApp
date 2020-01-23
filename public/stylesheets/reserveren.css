@@ -5,7 +5,7 @@
     select {
         width: 97%;
     }
-    .icon{
+    .icon {
         width: 10%;
     }
 }
@@ -17,7 +17,7 @@
     select {
         width: 87%;
     }
-    .icon{
+    .icon {
         width: 40px;
         height: 40px;
     }
@@ -57,14 +57,6 @@ h1 {
     color: #1DB954;
     border-bottom: 3px double white;
     padding-bottom: 5px;
-}
-
-.title {
-    text-align: center;
-    color: #1DB954;
-    border-bottom: 3px double white;
-    padding-bottom: 5px;
-    margin-top: 60px;
 }
 
 p {
@@ -125,6 +117,14 @@ header {
     z-index: 2;
 }
 
+.title {
+    text-align: center;
+    color: #1DB954;
+    border-bottom: 3px double white;
+    padding-bottom: 5px;
+    margin-top: 60px;
+}
+
 .return {
     position: fixed;
     top: 5px;
@@ -168,10 +168,16 @@ header {
     font-size: x-large;
 }
 
-.unstyled::-webkit-inner-spin-button,
-.unstyled::-webkit-clear-button {
-    display: none;
-    -webkit-appearance: none;
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+input[type=text]:focus {
+    background-color: #1DB954;
 }
 
 [type=radio] {
@@ -184,18 +190,6 @@ header {
 [type=radio]+img {
     cursor: pointer;
 }
-
-input,
-textarea,
-button,
-select,
-a {
-    -webkit-tap-highlight-color: transparent;
-}
-
-input[type=text]:focus {
-    background-color: #1DB954;
-  }
 
 
 /* width */
@@ -234,6 +228,12 @@ input[type=text]:focus {
     to {
         opacity: 1;
     }
+}
+
+.unstyled::-webkit-inner-spin-button,
+.unstyled::-webkit-clear-button {
+    display: none;
+    -webkit-appearance: none;
 }
 
 

@@ -46,14 +46,6 @@ h1 {
     padding-bottom: 5px;
 }
 
-.title {
-    text-align: center;
-    color: #1DB954;
-    border-bottom: 3px double white;
-    padding-bottom: 5px;
-    margin-top: 60px;
-}
-
 h2 {
     font-style: italic;
     text-align: left;
@@ -153,6 +145,26 @@ footer {
     left: -5px;
 }
 
+.table,
+tr,
+th,
+td {
+    border: 2px solid white;
+    border-collapse: collapse;
+    padding: 10px;
+    font-size: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    text-align: center;
+    color: #1DB954;
+    border-bottom: 3px double white;
+    padding-bottom: 5px;
+    margin-top: 60px;
+}
+
 #image2 {
     line-height: 1.5em;
     list-style-image: url(/public/images/scissors2.png);
@@ -200,18 +212,6 @@ footer {
     object-fit: cover;
 }
 
-.table,
-tr,
-th,
-td {
-    border: 2px solid white;
-    border-collapse: collapse;
-    padding: 10px;
-    font-size: 24px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .table {
     width: 100%;
 }
@@ -240,7 +240,7 @@ td {
     transition: color 0.5s ease;
 }
 
-.floating{
+.floating {
     position: fixed;
     right: 5px;
     padding: 15px 25px;
@@ -259,7 +259,7 @@ td {
     transform: translate3d(0px, 0px, 0px);
 }
 
-.notFloating{
+.notFloating {
     position: fixed;
     right: -500px;
     padding: 15px 25px;
@@ -277,7 +277,7 @@ td {
     transform: translate3d(-50px, -50px, -50px);
 }
 
-#resultaat{
+#resultaat {
     display: none;
 }
 
