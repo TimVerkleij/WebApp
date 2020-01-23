@@ -31,38 +31,43 @@ function searchDatabase() {
         })
         .then(v => v.json())
         .then(response => {
-            response = response.response;
+            if (response.response.length === 0) {
+                resultaat.innerHTML = "Er zijn geen afspraken gevonden"
+                resultaat.style.display = 'block';
+            } else {
+                resultaat.innerHTML = "Er zijn " + response.length + " afspraken gevonden:"
 
-            resultaat.innerHTML = "Er zijn " + response.length + " afspraken gevonden:"
+                response = response.response;
 
-            let mountains = response
+                let mountains = response
 
-            function generateTableHead(table, data) {
-                let thead = table.createTHead();
-                let row = thead.insertRow();
-                for (let key of data) {
-                    let th = document.createElement("th");
-                    let text = document.createTextNode(key);
-                    th.appendChild(text);
-                    row.appendChild(th);
-                }
-            }
-
-            function generateTable(table, data) {
-                for (let element of data) {
-                    let row = table.insertRow();
-                    for (key in element) {
-                        let cell = row.insertCell();
-                        let text = document.createTextNode(element[key]);
-                        cell.appendChild(text);
+                function generateTableHead(table, data) {
+                    let thead = table.createTHead();
+                    let row = thead.insertRow();
+                    for (let key of data) {
+                        let th = document.createElement("th");
+                        let text = document.createTextNode(key);
+                        th.appendChild(text);
+                        row.appendChild(th);
                     }
                 }
+
+                function generateTable(table, data) {
+                    for (let element of data) {
+                        let row = table.insertRow();
+                        for (key in element) {
+                            let cell = row.insertCell();
+                            let text = document.createTextNode(element[key]);
+                            cell.appendChild(text);
+                        }
+                    }
+                }
+                let table = document.querySelector("table");
+                let data = Object.keys(mountains[0]);
+                generateTableHead(table, data);
+                generateTable(table, mountains);
+                resultaat.style.display = 'block';
             }
-            let table = document.querySelector("table");
-            let data = Object.keys(mountains[0]);
-            generateTableHead(table, data);
-            generateTable(table, mountains);
-            resultaat.style.display = 'block';
         })
     setTimeout(scrollDown, 100);
 }
