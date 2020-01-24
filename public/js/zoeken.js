@@ -37,7 +37,7 @@ function searchDatabase() {
                 resultaat.innerHTML = "Er zijn geen afspraken gevonden"
                 resultaat.style.display = 'block';
             } else {
-                resultaat.innerHTML = "Er zijn " + response.length + " afspraken gevonden:"
+                resultaat.innerHTML = "Er zijn " + response.response.length + " afspraken gevonden:"
 
                 response = response.response;
 
